@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd2ecore:XSD2EcoreMappingRoot xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsd2ecore="http://www.eclipse.org/emf/2002/XSD2Ecore" inputs="maven.xsd#/"
+    outputs="_0.ecore#/" topToBottom="true">
+  <nested inputs="bundleentry://886.fwk20196260/cache/www.w3.org/2001/XMLSchema.xsd#//string;XSDSimpleTypeDefinition=9"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  <nested inputs="maven.xsd#//Parent;XSDComplexTypeDefinition=28" outputs="_0.ecore#//Parent">
+    <nested inputs="maven.xsd#//Parent;XSDComplexTypeDefinition=28/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//Parent/artifactId"/>
+    <nested inputs="maven.xsd#//Parent;XSDComplexTypeDefinition=28/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//Parent/groupId"/>
+    <nested inputs="maven.xsd#//Parent;XSDComplexTypeDefinition=28/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_0.ecore#//Parent/version"/>
+    <nested inputs="maven.xsd#//Parent;XSDComplexTypeDefinition=28/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_0.ecore#//Parent/relativePath"/>
+  </nested>
+  <nested inputs="maven.xsd#//Prerequisites;XSDComplexTypeDefinition=29" outputs="_0.ecore#//Prerequisites">
+    <nested inputs="maven.xsd#//Prerequisites;XSDComplexTypeDefinition=29/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//Prerequisites/maven"/>
+  </nested>
+  <nested inputs="maven.xsd#//IssueManagement;XSDComplexTypeDefinition=27" outputs="_0.ecore#//IssueManagement">
+    <nested inputs="maven.xsd#//IssueManagement;XSDComplexTypeDefinition=27/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//IssueManagement/system"/>
+    <nested inputs="maven.xsd#//IssueManagement;XSDComplexTypeDefinition=27/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//IssueManagement/url"/>
+  </nested>
+  <nested inputs="bundleentry://886.fwk20196260/cache/www.w3.org/2001/XMLSchema.xsd#//boolean;XSDSimpleTypeDefinition=10"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//Boolean"/>
+  <nested inputs="maven.xsd#//Notifier;XSDComplexTypeDefinition=31/XSDParticle/XSDModelGroup/XSDParticle=6/configuration;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//ConfigurationType4">
+    <nested inputs="maven.xsd#//Notifier;XSDComplexTypeDefinition=31/XSDParticle/XSDModelGroup/XSDParticle=6/configuration;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//ConfigurationType4/any"/>
+  </nested>
+  <nested inputs="maven.xsd#//Notifier;XSDComplexTypeDefinition=31" outputs="_0.ecore#//Notifier">
+    <nested inputs="maven.xsd#//Notifier;XSDComplexTypeDefinition=31/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//Notifier/type"/>
+    <nested inputs="maven.xsd#//Notifier;XSDComplexTypeDefinition=31/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//Notifier/sendOnError"/>
+    <nested inputs="maven.xsd#//Notifier;XSDComplexTypeDefinition=31/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_0.ecore#//Notifier/sendOnFailure"/>
+    <nested inputs="maven.xsd#//Notifier;XSDComplexTypeDefinition=31/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_0.ecore#//Notifier/sendOnSuccess"/>
+    <nested inputs="maven.xsd#//Notifier;XSDComplexTypeDefinition=31/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_0.ecore#//Notifier/sendOnWarning"/>
+    <nested inputs="maven.xsd#//Notifier;XSDComplexTypeDefinition=31/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="_0.ecore#//Notifier/address"/>
+    <nested inputs="maven.xsd#//Notifier;XSDComplexTypeDefinition=31/XSDParticle/XSDModelGroup/XSDParticle=6"
+        outputs="_0.ecore#//Notifier/configuration"/>
+  </nested>
+  <nested inputs="maven.xsd#//CiManagement;XSDComplexTypeDefinition=30/XSDParticle/XSDModelGroup/XSDParticle=2/notifiers;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//NotifiersType">
+    <nested inputs="maven.xsd#//CiManagement;XSDComplexTypeDefinition=30/XSDParticle/XSDModelGroup/XSDParticle=2/notifiers;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//NotifiersType/notifier"/>
+  </nested>
+  <nested inputs="maven.xsd#//CiManagement;XSDComplexTypeDefinition=30" outputs="_0.ecore#//CiManagement">
+    <nested inputs="maven.xsd#//CiManagement;XSDComplexTypeDefinition=30/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//CiManagement/system"/>
+    <nested inputs="maven.xsd#//CiManagement;XSDComplexTypeDefinition=30/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//CiManagement/url"/>
+    <nested inputs="maven.xsd#//CiManagement;XSDComplexTypeDefinition=30/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_0.ecore#//CiManagement/notifiers"/>
+  </nested>
+  <nested inputs="maven.xsd#//MailingList;XSDComplexTypeDefinition=24/XSDParticle/XSDModelGroup/XSDParticle=5/otherArchives;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//OtherArchivesType">
+    <nested inputs="maven.xsd#//MailingList;XSDComplexTypeDefinition=24/XSDParticle/XSDModelGroup/XSDParticle=5/otherArchives;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//OtherArchivesType/otherArchive"/>
+  </nested>
+  <nested inputs="maven.xsd#//MailingList;XSDComplexTypeDefinition=24" outputs="_0.ecore#//MailingList">
+    <nested inputs="maven.xsd#//MailingList;XSDComplexTypeDefinition=24/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//MailingList/name"/>
+    <nested inputs="maven.xsd#//MailingList;XSDComplexTypeDefinition=24/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//MailingList/subscribe"/>
+    <nested inputs="maven.xsd#//MailingList;XSDComplexTypeDefinition=24/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_0.ecore#//MailingList/unsubscribe"/>
+    <nested inputs="maven.xsd#//MailingList;XSDComplexTypeDefinition=24/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_0.ecore#//MailingList/post"/>
+    <nested inputs="maven.xsd#//MailingList;XSDComplexTypeDefinition=24/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_0.ecore#//MailingList/archive"/>
+    <nested inputs="maven.xsd#//MailingList;XSDComplexTypeDefinition=24/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="_0.ecore#//MailingList/otherArchives"/>
+  </nested>
+  <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=13/mailingLists;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//MailingListsType">
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=13/mailingLists;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//MailingListsType/mailingList"/>
+  </nested>
+  <nested inputs="maven.xsd#//Developer;XSDComplexTypeDefinition=33/XSDParticle/XSDModelGroup/XSDParticle=6/roles;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//RolesType1">
+    <nested inputs="maven.xsd#//Developer;XSDComplexTypeDefinition=33/XSDParticle/XSDModelGroup/XSDParticle=6/roles;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//RolesType1/role"/>
+  </nested>
+  <nested inputs="maven.xsd#//Developer;XSDComplexTypeDefinition=33/XSDParticle/XSDModelGroup/XSDParticle=8/properties;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//PropertiesType3">
+    <nested inputs="maven.xsd#//Developer;XSDComplexTypeDefinition=33/XSDParticle/XSDModelGroup/XSDParticle=8/properties;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//PropertiesType3/any"/>
+  </nested>
+  <nested inputs="maven.xsd#//Developer;XSDComplexTypeDefinition=33" outputs="_0.ecore#//Developer">
+    <nested inputs="maven.xsd#//Developer;XSDComplexTypeDefinition=33/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//Developer/id"/>
+    <nested inputs="maven.xsd#//Developer;XSDComplexTypeDefinition=33/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//Developer/name"/>
+    <nested inputs="maven.xsd#//Developer;XSDComplexTypeDefinition=33/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_0.ecore#//Developer/email"/>
+    <nested inputs="maven.xsd#//Developer;XSDComplexTypeDefinition=33/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_0.ecore#//Developer/url"/>
+    <nested inputs="maven.xsd#//Developer;XSDComplexTypeDefinition=33/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_0.ecore#//Developer/organization"/>
+    <nested inputs="maven.xsd#//Developer;XSDComplexTypeDefinition=33/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="_0.ecore#//Developer/organizationUrl"/>
+    <nested inputs="maven.xsd#//Developer;XSDComplexTypeDefinition=33/XSDParticle/XSDModelGroup/XSDParticle=6"
+        outputs="_0.ecore#//Developer/roles"/>
+    <nested inputs="maven.xsd#//Developer;XSDComplexTypeDefinition=33/XSDParticle/XSDModelGroup/XSDParticle=7"
+        outputs="_0.ecore#//Developer/timezone"/>
+    <nested inputs="maven.xsd#//Developer;XSDComplexTypeDefinition=33/XSDParticle/XSDModelGroup/XSDParticle=8"
+        outputs="_0.ecore#//Developer/properties"/>
+  </nested>
+  <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=14/developers;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//DevelopersType">
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=14/developers;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//DevelopersType/developer"/>
+  </nested>
+  <nested inputs="maven.xsd#//Contributor;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=5/roles;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//RolesType">
+    <nested inputs="maven.xsd#//Contributor;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=5/roles;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//RolesType/role"/>
+  </nested>
+  <nested inputs="maven.xsd#//Contributor;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=7/properties;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//PropertiesType">
+    <nested inputs="maven.xsd#//Contributor;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=7/properties;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//PropertiesType/any"/>
+  </nested>
+  <nested inputs="maven.xsd#//Contributor;XSDComplexTypeDefinition=1" outputs="_0.ecore#//Contributor">
+    <nested inputs="maven.xsd#//Contributor;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//Contributor/name"/>
+    <nested inputs="maven.xsd#//Contributor;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//Contributor/email"/>
+    <nested inputs="maven.xsd#//Contributor;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_0.ecore#//Contributor/url"/>
+    <nested inputs="maven.xsd#//Contributor;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_0.ecore#//Contributor/organization"/>
+    <nested inputs="maven.xsd#//Contributor;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_0.ecore#//Contributor/organizationUrl"/>
+    <nested inputs="maven.xsd#//Contributor;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="_0.ecore#//Contributor/roles"/>
+    <nested inputs="maven.xsd#//Contributor;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=6"
+        outputs="_0.ecore#//Contributor/timezone"/>
+    <nested inputs="maven.xsd#//Contributor;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=7"
+        outputs="_0.ecore#//Contributor/properties"/>
+  </nested>
+  <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=15/contributors;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//ContributorsType">
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=15/contributors;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//ContributorsType/contributor"/>
+  </nested>
+  <nested inputs="maven.xsd#//License;XSDComplexTypeDefinition=32" outputs="_0.ecore#//License">
+    <nested inputs="maven.xsd#//License;XSDComplexTypeDefinition=32/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//License/name"/>
+    <nested inputs="maven.xsd#//License;XSDComplexTypeDefinition=32/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//License/url"/>
+    <nested inputs="maven.xsd#//License;XSDComplexTypeDefinition=32/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_0.ecore#//License/distribution"/>
+    <nested inputs="maven.xsd#//License;XSDComplexTypeDefinition=32/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_0.ecore#//License/comments"/>
+  </nested>
+  <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=16/licenses;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//LicensesType">
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=16/licenses;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//LicensesType/license"/>
+  </nested>
+  <nested inputs="maven.xsd#//Scm;XSDComplexTypeDefinition=34" outputs="_0.ecore#//Scm">
+    <nested inputs="maven.xsd#//Scm;XSDComplexTypeDefinition=34/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//Scm/connection"/>
+    <nested inputs="maven.xsd#//Scm;XSDComplexTypeDefinition=34/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//Scm/developerConnection"/>
+    <nested inputs="maven.xsd#//Scm;XSDComplexTypeDefinition=34/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_0.ecore#//Scm/tag"/>
+    <nested inputs="maven.xsd#//Scm;XSDComplexTypeDefinition=34/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_0.ecore#//Scm/url"/>
+  </nested>
+  <nested inputs="maven.xsd#//Organization;XSDComplexTypeDefinition=35" outputs="_0.ecore#//Organization">
+    <nested inputs="maven.xsd#//Organization;XSDComplexTypeDefinition=35/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//Organization/name"/>
+    <nested inputs="maven.xsd#//Organization;XSDComplexTypeDefinition=35/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//Organization/url"/>
+  </nested>
+  <nested inputs="maven.xsd#//Extension;XSDComplexTypeDefinition=26" outputs="_0.ecore#//Extension">
+    <nested inputs="maven.xsd#//Extension;XSDComplexTypeDefinition=26/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//Extension/groupId"/>
+    <nested inputs="maven.xsd#//Extension;XSDComplexTypeDefinition=26/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//Extension/artifactId"/>
+    <nested inputs="maven.xsd#//Extension;XSDComplexTypeDefinition=26/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_0.ecore#//Extension/version"/>
+  </nested>
+  <nested inputs="maven.xsd#//Build;XSDComplexTypeDefinition=25/XSDParticle/XSDModelGroup/XSDParticle=5/extensions;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//ExtensionsType">
+    <nested inputs="maven.xsd#//Build;XSDComplexTypeDefinition=25/XSDParticle/XSDModelGroup/XSDParticle=5/extensions;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//ExtensionsType/extension"/>
+  </nested>
+  <nested inputs="maven.xsd#//Resource;XSDComplexTypeDefinition=17/XSDParticle/XSDModelGroup/XSDParticle=3/includes;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//IncludesType">
+    <nested inputs="maven.xsd#//Resource;XSDComplexTypeDefinition=17/XSDParticle/XSDModelGroup/XSDParticle=3/includes;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//IncludesType/include"/>
+  </nested>
+  <nested inputs="maven.xsd#//Resource;XSDComplexTypeDefinition=17/XSDParticle/XSDModelGroup/XSDParticle=4/excludes;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//ExcludesType">
+    <nested inputs="maven.xsd#//Resource;XSDComplexTypeDefinition=17/XSDParticle/XSDModelGroup/XSDParticle=4/excludes;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//ExcludesType/exclude"/>
+  </nested>
+  <nested inputs="maven.xsd#//Resource;XSDComplexTypeDefinition=17" outputs="_0.ecore#//Resource">
+    <nested inputs="maven.xsd#//Resource;XSDComplexTypeDefinition=17/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//Resource/targetPath"/>
+    <nested inputs="maven.xsd#//Resource;XSDComplexTypeDefinition=17/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//Resource/filtering"/>
+    <nested inputs="maven.xsd#//Resource;XSDComplexTypeDefinition=17/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_0.ecore#//Resource/directory"/>
+    <nested inputs="maven.xsd#//Resource;XSDComplexTypeDefinition=17/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_0.ecore#//Resource/includes"/>
+    <nested inputs="maven.xsd#//Resource;XSDComplexTypeDefinition=17/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_0.ecore#//Resource/excludes"/>
+  </nested>
+  <nested inputs="maven.xsd#//Build;XSDComplexTypeDefinition=25/XSDParticle/XSDModelGroup/XSDParticle=7/resources;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//ResourcesType1">
+    <nested inputs="maven.xsd#//Build;XSDComplexTypeDefinition=25/XSDParticle/XSDModelGroup/XSDParticle=7/resources;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//ResourcesType1/resource"/>
+  </nested>
+  <nested inputs="maven.xsd#//Build;XSDComplexTypeDefinition=25/XSDParticle/XSDModelGroup/XSDParticle=8/testResources;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//TestResourcesType1">
+    <nested inputs="maven.xsd#//Build;XSDComplexTypeDefinition=25/XSDParticle/XSDModelGroup/XSDParticle=8/testResources;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//TestResourcesType1/testResource"/>
+  </nested>
+  <nested inputs="maven.xsd#//Build;XSDComplexTypeDefinition=25/XSDParticle/XSDModelGroup/XSDParticle=11/filters;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//FiltersType1">
+    <nested inputs="maven.xsd#//Build;XSDComplexTypeDefinition=25/XSDParticle/XSDModelGroup/XSDParticle=11/filters;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//FiltersType1/filter"/>
+  </nested>
+  <nested inputs="maven.xsd#//PluginExecution;XSDComplexTypeDefinition=15/XSDParticle/XSDModelGroup/XSDParticle=2/goals;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//GoalsType1">
+    <nested inputs="maven.xsd#//PluginExecution;XSDComplexTypeDefinition=15/XSDParticle/XSDModelGroup/XSDParticle=2/goals;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//GoalsType1/goal"/>
+  </nested>
+  <nested inputs="maven.xsd#//PluginExecution;XSDComplexTypeDefinition=15/XSDParticle/XSDModelGroup/XSDParticle=4/configuration;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//ConfigurationType3">
+    <nested inputs="maven.xsd#//PluginExecution;XSDComplexTypeDefinition=15/XSDParticle/XSDModelGroup/XSDParticle=4/configuration;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//ConfigurationType3/any"/>
+  </nested>
+  <nested inputs="maven.xsd#//PluginExecution;XSDComplexTypeDefinition=15" outputs="_0.ecore#//PluginExecution">
+    <nested inputs="maven.xsd#//PluginExecution;XSDComplexTypeDefinition=15/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//PluginExecution/id"/>
+    <nested inputs="maven.xsd#//PluginExecution;XSDComplexTypeDefinition=15/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//PluginExecution/phase"/>
+    <nested inputs="maven.xsd#//PluginExecution;XSDComplexTypeDefinition=15/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_0.ecore#//PluginExecution/goals"/>
+    <nested inputs="maven.xsd#//PluginExecution;XSDComplexTypeDefinition=15/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_0.ecore#//PluginExecution/inherited"/>
+    <nested inputs="maven.xsd#//PluginExecution;XSDComplexTypeDefinition=15/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_0.ecore#//PluginExecution/configuration"/>
+  </nested>
+  <nested inputs="maven.xsd#//Plugin;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle=4/executions;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//ExecutionsType">
+    <nested inputs="maven.xsd#//Plugin;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle=4/executions;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//ExecutionsType/execution"/>
+  </nested>
+  <nested inputs="maven.xsd#//Exclusion;XSDComplexTypeDefinition=9" outputs="_0.ecore#//Exclusion">
+    <nested inputs="maven.xsd#//Exclusion;XSDComplexTypeDefinition=9/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//Exclusion/artifactId"/>
+    <nested inputs="maven.xsd#//Exclusion;XSDComplexTypeDefinition=9/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//Exclusion/groupId"/>
+  </nested>
+  <nested inputs="maven.xsd#//Dependency;XSDComplexTypeDefinition=8/XSDParticle/XSDModelGroup/XSDParticle=7/exclusions;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//ExclusionsType">
+    <nested inputs="maven.xsd#//Dependency;XSDComplexTypeDefinition=8/XSDParticle/XSDModelGroup/XSDParticle=7/exclusions;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//ExclusionsType/exclusion"/>
+  </nested>
+  <nested inputs="maven.xsd#//Dependency;XSDComplexTypeDefinition=8" outputs="_0.ecore#//Dependency">
+    <nested inputs="maven.xsd#//Dependency;XSDComplexTypeDefinition=8/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//Dependency/groupId"/>
+    <nested inputs="maven.xsd#//Dependency;XSDComplexTypeDefinition=8/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//Dependency/artifactId"/>
+    <nested inputs="maven.xsd#//Dependency;XSDComplexTypeDefinition=8/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_0.ecore#//Dependency/version"/>
+    <nested inputs="maven.xsd#//Dependency;XSDComplexTypeDefinition=8/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_0.ecore#//Dependency/type"/>
+    <nested inputs="maven.xsd#//Dependency;XSDComplexTypeDefinition=8/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_0.ecore#//Dependency/classifier"/>
+    <nested inputs="maven.xsd#//Dependency;XSDComplexTypeDefinition=8/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="_0.ecore#//Dependency/scope"/>
+    <nested inputs="maven.xsd#//Dependency;XSDComplexTypeDefinition=8/XSDParticle/XSDModelGroup/XSDParticle=6"
+        outputs="_0.ecore#//Dependency/systemPath"/>
+    <nested inputs="maven.xsd#//Dependency;XSDComplexTypeDefinition=8/XSDParticle/XSDModelGroup/XSDParticle=7"
+        outputs="_0.ecore#//Dependency/exclusions"/>
+    <nested inputs="maven.xsd#//Dependency;XSDComplexTypeDefinition=8/XSDParticle/XSDModelGroup/XSDParticle=8"
+        outputs="_0.ecore#//Dependency/optional"/>
+  </nested>
+  <nested inputs="maven.xsd#//Plugin;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle=5/dependencies;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//DependenciesType3">
+    <nested inputs="maven.xsd#//Plugin;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle=5/dependencies;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//DependenciesType3/dependency"/>
+  </nested>
+  <nested inputs="maven.xsd#//Plugin;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle=6/goals;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//GoalsType">
+    <nested inputs="maven.xsd#//Plugin;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle=6/goals;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//GoalsType/any"/>
+  </nested>
+  <nested inputs="maven.xsd#//Plugin;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle=8/configuration;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//ConfigurationType2">
+    <nested inputs="maven.xsd#//Plugin;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle=8/configuration;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//ConfigurationType2/any"/>
+  </nested>
+  <nested inputs="maven.xsd#//Plugin;XSDComplexTypeDefinition=14" outputs="_0.ecore#//Plugin">
+    <nested inputs="maven.xsd#//Plugin;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//Plugin/groupId"/>
+    <nested inputs="maven.xsd#//Plugin;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//Plugin/artifactId"/>
+    <nested inputs="maven.xsd#//Plugin;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_0.ecore#//Plugin/version"/>
+    <nested inputs="maven.xsd#//Plugin;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_0.ecore#//Plugin/extensions"/>
+    <nested inputs="maven.xsd#//Plugin;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_0.ecore#//Plugin/executions"/>
+    <nested inputs="maven.xsd#//Plugin;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="_0.ecore#//Plugin/dependencies"/>
+    <nested inputs="maven.xsd#//Plugin;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle=6"
+        outputs="_0.ecore#//Plugin/goals"/>
+    <nested inputs="maven.xsd#//Plugin;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle=7"
+        outputs="_0.ecore#//Plugin/inherited"/>
+    <nested inputs="maven.xsd#//Plugin;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle=8"
+        outputs="_0.ecore#//Plugin/configuration"/>
+  </nested>
+  <nested inputs="maven.xsd#//PluginManagement;XSDComplexTypeDefinition=16/XSDParticle/XSDModelGroup/XSDParticle/plugins;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//PluginsType3">
+    <nested inputs="maven.xsd#//PluginManagement;XSDComplexTypeDefinition=16/XSDParticle/XSDModelGroup/XSDParticle/plugins;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//PluginsType3/plugin"/>
+  </nested>
+  <nested inputs="maven.xsd#//PluginManagement;XSDComplexTypeDefinition=16" outputs="_0.ecore#//PluginManagement">
+    <nested inputs="maven.xsd#//PluginManagement;XSDComplexTypeDefinition=16/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//PluginManagement/plugins"/>
+  </nested>
+  <nested inputs="maven.xsd#//Build;XSDComplexTypeDefinition=25/XSDParticle/XSDModelGroup/XSDParticle=13/plugins;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//PluginsType2">
+    <nested inputs="maven.xsd#//Build;XSDComplexTypeDefinition=25/XSDParticle/XSDModelGroup/XSDParticle=13/plugins;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//PluginsType2/plugin"/>
+  </nested>
+  <nested inputs="maven.xsd#//Build;XSDComplexTypeDefinition=25" outputs="_0.ecore#//Build">
+    <nested inputs="maven.xsd#//Build;XSDComplexTypeDefinition=25/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//Build/sourceDirectory"/>
+    <nested inputs="maven.xsd#//Build;XSDComplexTypeDefinition=25/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//Build/scriptSourceDirectory"/>
+    <nested inputs="maven.xsd#//Build;XSDComplexTypeDefinition=25/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_0.ecore#//Build/testSourceDirectory"/>
+    <nested inputs="maven.xsd#//Build;XSDComplexTypeDefinition=25/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_0.ecore#//Build/outputDirectory"/>
+    <nested inputs="maven.xsd#//Build;XSDComplexTypeDefinition=25/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_0.ecore#//Build/testOutputDirectory"/>
+    <nested inputs="maven.xsd#//Build;XSDComplexTypeDefinition=25/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="_0.ecore#//Build/extensions"/>
+    <nested inputs="maven.xsd#//Build;XSDComplexTypeDefinition=25/XSDParticle/XSDModelGroup/XSDParticle=6"
+        outputs="_0.ecore#//Build/defaultGoal"/>
+    <nested inputs="maven.xsd#//Build;XSDComplexTypeDefinition=25/XSDParticle/XSDModelGroup/XSDParticle=7"
+        outputs="_0.ecore#//Build/resources"/>
+    <nested inputs="maven.xsd#//Build;XSDComplexTypeDefinition=25/XSDParticle/XSDModelGroup/XSDParticle=8"
+        outputs="_0.ecore#//Build/testResources"/>
+    <nested inputs="maven.xsd#//Build;XSDComplexTypeDefinition=25/XSDParticle/XSDModelGroup/XSDParticle=9"
+        outputs="_0.ecore#//Build/directory"/>
+    <nested inputs="maven.xsd#//Build;XSDComplexTypeDefinition=25/XSDParticle/XSDModelGroup/XSDParticle=10"
+        outputs="_0.ecore#//Build/finalName"/>
+    <nested inputs="maven.xsd#//Build;XSDComplexTypeDefinition=25/XSDParticle/XSDModelGroup/XSDParticle=11"
+        outputs="_0.ecore#//Build/filters"/>
+    <nested inputs="maven.xsd#//Build;XSDComplexTypeDefinition=25/XSDParticle/XSDModelGroup/XSDParticle=12"
+        outputs="_0.ecore#//Build/pluginManagement"/>
+    <nested inputs="maven.xsd#//Build;XSDComplexTypeDefinition=25/XSDParticle/XSDModelGroup/XSDParticle=13"
+        outputs="_0.ecore#//Build/plugins"/>
+  </nested>
+  <nested inputs="maven.xsd#//ActivationOS;XSDComplexTypeDefinition=6" outputs="_0.ecore#//ActivationOS">
+    <nested inputs="maven.xsd#//ActivationOS;XSDComplexTypeDefinition=6/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//ActivationOS/name"/>
+    <nested inputs="maven.xsd#//ActivationOS;XSDComplexTypeDefinition=6/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//ActivationOS/family"/>
+    <nested inputs="maven.xsd#//ActivationOS;XSDComplexTypeDefinition=6/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_0.ecore#//ActivationOS/arch"/>
+    <nested inputs="maven.xsd#//ActivationOS;XSDComplexTypeDefinition=6/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_0.ecore#//ActivationOS/version"/>
+  </nested>
+  <nested inputs="maven.xsd#//ActivationProperty;XSDComplexTypeDefinition=5" outputs="_0.ecore#//ActivationProperty">
+    <nested inputs="maven.xsd#//ActivationProperty;XSDComplexTypeDefinition=5/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//ActivationProperty/name"/>
+    <nested inputs="maven.xsd#//ActivationProperty;XSDComplexTypeDefinition=5/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//ActivationProperty/value"/>
+  </nested>
+  <nested inputs="maven.xsd#//ActivationFile;XSDComplexTypeDefinition=4" outputs="_0.ecore#//ActivationFile">
+    <nested inputs="maven.xsd#//ActivationFile;XSDComplexTypeDefinition=4/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//ActivationFile/missing"/>
+    <nested inputs="maven.xsd#//ActivationFile;XSDComplexTypeDefinition=4/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//ActivationFile/exists"/>
+  </nested>
+  <nested inputs="maven.xsd#//Activation;XSDComplexTypeDefinition=3" outputs="_0.ecore#//Activation">
+    <nested inputs="maven.xsd#//Activation;XSDComplexTypeDefinition=3/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//Activation/activeByDefault"/>
+    <nested inputs="maven.xsd#//Activation;XSDComplexTypeDefinition=3/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//Activation/jdk"/>
+    <nested inputs="maven.xsd#//Activation;XSDComplexTypeDefinition=3/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_0.ecore#//Activation/os"/>
+    <nested inputs="maven.xsd#//Activation;XSDComplexTypeDefinition=3/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_0.ecore#//Activation/property"/>
+    <nested inputs="maven.xsd#//Activation;XSDComplexTypeDefinition=3/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_0.ecore#//Activation/file"/>
+  </nested>
+  <nested inputs="maven.xsd#//BuildBase;XSDComplexTypeDefinition=13/XSDParticle/XSDModelGroup/XSDParticle=1/resources;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//ResourcesType">
+    <nested inputs="maven.xsd#//BuildBase;XSDComplexTypeDefinition=13/XSDParticle/XSDModelGroup/XSDParticle=1/resources;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//ResourcesType/resource"/>
+  </nested>
+  <nested inputs="maven.xsd#//BuildBase;XSDComplexTypeDefinition=13/XSDParticle/XSDModelGroup/XSDParticle=2/testResources;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//TestResourcesType">
+    <nested inputs="maven.xsd#//BuildBase;XSDComplexTypeDefinition=13/XSDParticle/XSDModelGroup/XSDParticle=2/testResources;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//TestResourcesType/testResource"/>
+  </nested>
+  <nested inputs="maven.xsd#//BuildBase;XSDComplexTypeDefinition=13/XSDParticle/XSDModelGroup/XSDParticle=5/filters;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//FiltersType">
+    <nested inputs="maven.xsd#//BuildBase;XSDComplexTypeDefinition=13/XSDParticle/XSDModelGroup/XSDParticle=5/filters;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//FiltersType/filter"/>
+  </nested>
+  <nested inputs="maven.xsd#//BuildBase;XSDComplexTypeDefinition=13/XSDParticle/XSDModelGroup/XSDParticle=7/plugins;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//PluginsType">
+    <nested inputs="maven.xsd#//BuildBase;XSDComplexTypeDefinition=13/XSDParticle/XSDModelGroup/XSDParticle=7/plugins;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//PluginsType/plugin"/>
+  </nested>
+  <nested inputs="maven.xsd#//BuildBase;XSDComplexTypeDefinition=13" outputs="_0.ecore#//BuildBase">
+    <nested inputs="maven.xsd#//BuildBase;XSDComplexTypeDefinition=13/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//BuildBase/defaultGoal"/>
+    <nested inputs="maven.xsd#//BuildBase;XSDComplexTypeDefinition=13/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//BuildBase/resources"/>
+    <nested inputs="maven.xsd#//BuildBase;XSDComplexTypeDefinition=13/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_0.ecore#//BuildBase/testResources"/>
+    <nested inputs="maven.xsd#//BuildBase;XSDComplexTypeDefinition=13/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_0.ecore#//BuildBase/directory"/>
+    <nested inputs="maven.xsd#//BuildBase;XSDComplexTypeDefinition=13/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_0.ecore#//BuildBase/finalName"/>
+    <nested inputs="maven.xsd#//BuildBase;XSDComplexTypeDefinition=13/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="_0.ecore#//BuildBase/filters"/>
+    <nested inputs="maven.xsd#//BuildBase;XSDComplexTypeDefinition=13/XSDParticle/XSDModelGroup/XSDParticle=6"
+        outputs="_0.ecore#//BuildBase/pluginManagement"/>
+    <nested inputs="maven.xsd#//BuildBase;XSDComplexTypeDefinition=13/XSDParticle/XSDModelGroup/XSDParticle=7"
+        outputs="_0.ecore#//BuildBase/plugins"/>
+  </nested>
+  <nested inputs="maven.xsd#//Profile;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=3/modules;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//ModulesType1">
+    <nested inputs="maven.xsd#//Profile;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=3/modules;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//ModulesType1/module"/>
+  </nested>
+  <nested inputs="maven.xsd#//RepositoryPolicy;XSDComplexTypeDefinition=23" outputs="_0.ecore#//RepositoryPolicy">
+    <nested inputs="maven.xsd#//RepositoryPolicy;XSDComplexTypeDefinition=23/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//RepositoryPolicy/enabled"/>
+    <nested inputs="maven.xsd#//RepositoryPolicy;XSDComplexTypeDefinition=23/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//RepositoryPolicy/updatePolicy"/>
+    <nested inputs="maven.xsd#//RepositoryPolicy;XSDComplexTypeDefinition=23/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_0.ecore#//RepositoryPolicy/checksumPolicy"/>
+  </nested>
+  <nested inputs="maven.xsd#//Repository;XSDComplexTypeDefinition=22" outputs="_0.ecore#//Repository">
+    <nested inputs="maven.xsd#//Repository;XSDComplexTypeDefinition=22/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//Repository/releases"/>
+    <nested inputs="maven.xsd#//Repository;XSDComplexTypeDefinition=22/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//Repository/snapshots"/>
+    <nested inputs="maven.xsd#//Repository;XSDComplexTypeDefinition=22/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_0.ecore#//Repository/id"/>
+    <nested inputs="maven.xsd#//Repository;XSDComplexTypeDefinition=22/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_0.ecore#//Repository/name"/>
+    <nested inputs="maven.xsd#//Repository;XSDComplexTypeDefinition=22/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_0.ecore#//Repository/url"/>
+    <nested inputs="maven.xsd#//Repository;XSDComplexTypeDefinition=22/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="_0.ecore#//Repository/layout"/>
+  </nested>
+  <nested inputs="maven.xsd#//Profile;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=4/repositories;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//RepositoriesType1">
+    <nested inputs="maven.xsd#//Profile;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=4/repositories;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//RepositoriesType1/repository"/>
+  </nested>
+  <nested inputs="maven.xsd#//Profile;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=5/pluginRepositories;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//PluginRepositoriesType1">
+    <nested inputs="maven.xsd#//Profile;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=5/pluginRepositories;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//PluginRepositoriesType1/pluginRepository"/>
+  </nested>
+  <nested inputs="maven.xsd#//Profile;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=6/dependencies;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//DependenciesType2">
+    <nested inputs="maven.xsd#//Profile;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=6/dependencies;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//DependenciesType2/dependency"/>
+  </nested>
+  <nested inputs="maven.xsd#//Profile;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=7/reports;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//ReportsType2">
+    <nested inputs="maven.xsd#//Profile;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=7/reports;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//ReportsType2/any"/>
+  </nested>
+  <nested inputs="maven.xsd#//ReportPlugin;XSDComplexTypeDefinition=11/XSDParticle/XSDModelGroup/XSDParticle=4/configuration;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//ConfigurationType">
+    <nested inputs="maven.xsd#//ReportPlugin;XSDComplexTypeDefinition=11/XSDParticle/XSDModelGroup/XSDParticle=4/configuration;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//ConfigurationType/any"/>
+  </nested>
+  <nested inputs="maven.xsd#//ReportSet;XSDComplexTypeDefinition=12/XSDParticle/XSDModelGroup/XSDParticle=1/configuration;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//ConfigurationType1">
+    <nested inputs="maven.xsd#//ReportSet;XSDComplexTypeDefinition=12/XSDParticle/XSDModelGroup/XSDParticle=1/configuration;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//ConfigurationType1/any"/>
+  </nested>
+  <nested inputs="maven.xsd#//ReportSet;XSDComplexTypeDefinition=12/XSDParticle/XSDModelGroup/XSDParticle=3/reports;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//ReportsType">
+    <nested inputs="maven.xsd#//ReportSet;XSDComplexTypeDefinition=12/XSDParticle/XSDModelGroup/XSDParticle=3/reports;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//ReportsType/report"/>
+  </nested>
+  <nested inputs="maven.xsd#//ReportSet;XSDComplexTypeDefinition=12" outputs="_0.ecore#//ReportSet">
+    <nested inputs="maven.xsd#//ReportSet;XSDComplexTypeDefinition=12/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//ReportSet/id"/>
+    <nested inputs="maven.xsd#//ReportSet;XSDComplexTypeDefinition=12/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//ReportSet/configuration"/>
+    <nested inputs="maven.xsd#//ReportSet;XSDComplexTypeDefinition=12/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_0.ecore#//ReportSet/inherited"/>
+    <nested inputs="maven.xsd#//ReportSet;XSDComplexTypeDefinition=12/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_0.ecore#//ReportSet/reports"/>
+  </nested>
+  <nested inputs="maven.xsd#//ReportPlugin;XSDComplexTypeDefinition=11/XSDParticle/XSDModelGroup/XSDParticle=5/reportSets;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//ReportSetsType">
+    <nested inputs="maven.xsd#//ReportPlugin;XSDComplexTypeDefinition=11/XSDParticle/XSDModelGroup/XSDParticle=5/reportSets;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//ReportSetsType/reportSet"/>
+  </nested>
+  <nested inputs="maven.xsd#//ReportPlugin;XSDComplexTypeDefinition=11" outputs="_0.ecore#//ReportPlugin">
+    <nested inputs="maven.xsd#//ReportPlugin;XSDComplexTypeDefinition=11/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//ReportPlugin/groupId"/>
+    <nested inputs="maven.xsd#//ReportPlugin;XSDComplexTypeDefinition=11/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//ReportPlugin/artifactId"/>
+    <nested inputs="maven.xsd#//ReportPlugin;XSDComplexTypeDefinition=11/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_0.ecore#//ReportPlugin/version"/>
+    <nested inputs="maven.xsd#//ReportPlugin;XSDComplexTypeDefinition=11/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_0.ecore#//ReportPlugin/inherited"/>
+    <nested inputs="maven.xsd#//ReportPlugin;XSDComplexTypeDefinition=11/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_0.ecore#//ReportPlugin/configuration"/>
+    <nested inputs="maven.xsd#//ReportPlugin;XSDComplexTypeDefinition=11/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="_0.ecore#//ReportPlugin/reportSets"/>
+  </nested>
+  <nested inputs="maven.xsd#//Reporting;XSDComplexTypeDefinition=10/XSDParticle/XSDModelGroup/XSDParticle=2/plugins;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//PluginsType1">
+    <nested inputs="maven.xsd#//Reporting;XSDComplexTypeDefinition=10/XSDParticle/XSDModelGroup/XSDParticle=2/plugins;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//PluginsType1/plugin"/>
+  </nested>
+  <nested inputs="maven.xsd#//Reporting;XSDComplexTypeDefinition=10" outputs="_0.ecore#//Reporting">
+    <nested inputs="maven.xsd#//Reporting;XSDComplexTypeDefinition=10/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//Reporting/excludeDefaults"/>
+    <nested inputs="maven.xsd#//Reporting;XSDComplexTypeDefinition=10/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//Reporting/outputDirectory"/>
+    <nested inputs="maven.xsd#//Reporting;XSDComplexTypeDefinition=10/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_0.ecore#//Reporting/plugins"/>
+  </nested>
+  <nested inputs="maven.xsd#//DependencyManagement;XSDComplexTypeDefinition=7/XSDParticle/XSDModelGroup/XSDParticle/dependencies;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//DependenciesType1">
+    <nested inputs="maven.xsd#//DependencyManagement;XSDComplexTypeDefinition=7/XSDParticle/XSDModelGroup/XSDParticle/dependencies;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//DependenciesType1/dependency"/>
+  </nested>
+  <nested inputs="maven.xsd#//DependencyManagement;XSDComplexTypeDefinition=7" outputs="_0.ecore#//DependencyManagement">
+    <nested inputs="maven.xsd#//DependencyManagement;XSDComplexTypeDefinition=7/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//DependencyManagement/dependencies"/>
+  </nested>
+  <nested inputs="maven.xsd#//DeploymentRepository;XSDComplexTypeDefinition=21" outputs="_0.ecore#//DeploymentRepository">
+    <nested inputs="maven.xsd#//DeploymentRepository;XSDComplexTypeDefinition=21/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//DeploymentRepository/uniqueVersion"/>
+    <nested inputs="maven.xsd#//DeploymentRepository;XSDComplexTypeDefinition=21/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//DeploymentRepository/id"/>
+    <nested inputs="maven.xsd#//DeploymentRepository;XSDComplexTypeDefinition=21/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_0.ecore#//DeploymentRepository/name"/>
+    <nested inputs="maven.xsd#//DeploymentRepository;XSDComplexTypeDefinition=21/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_0.ecore#//DeploymentRepository/url"/>
+    <nested inputs="maven.xsd#//DeploymentRepository;XSDComplexTypeDefinition=21/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_0.ecore#//DeploymentRepository/layout"/>
+  </nested>
+  <nested inputs="maven.xsd#//Site;XSDComplexTypeDefinition=19" outputs="_0.ecore#//Site">
+    <nested inputs="maven.xsd#//Site;XSDComplexTypeDefinition=19/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//Site/id"/>
+    <nested inputs="maven.xsd#//Site;XSDComplexTypeDefinition=19/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//Site/name"/>
+    <nested inputs="maven.xsd#//Site;XSDComplexTypeDefinition=19/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_0.ecore#//Site/url"/>
+  </nested>
+  <nested inputs="maven.xsd#//Relocation;XSDComplexTypeDefinition=20" outputs="_0.ecore#//Relocation">
+    <nested inputs="maven.xsd#//Relocation;XSDComplexTypeDefinition=20/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//Relocation/groupId"/>
+    <nested inputs="maven.xsd#//Relocation;XSDComplexTypeDefinition=20/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//Relocation/artifactId"/>
+    <nested inputs="maven.xsd#//Relocation;XSDComplexTypeDefinition=20/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_0.ecore#//Relocation/version"/>
+    <nested inputs="maven.xsd#//Relocation;XSDComplexTypeDefinition=20/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_0.ecore#//Relocation/message"/>
+  </nested>
+  <nested inputs="maven.xsd#//DistributionManagement;XSDComplexTypeDefinition=18"
+      outputs="_0.ecore#//DistributionManagement">
+    <nested inputs="maven.xsd#//DistributionManagement;XSDComplexTypeDefinition=18/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//DistributionManagement/repository"/>
+    <nested inputs="maven.xsd#//DistributionManagement;XSDComplexTypeDefinition=18/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//DistributionManagement/snapshotRepository"/>
+    <nested inputs="maven.xsd#//DistributionManagement;XSDComplexTypeDefinition=18/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_0.ecore#//DistributionManagement/site"/>
+    <nested inputs="maven.xsd#//DistributionManagement;XSDComplexTypeDefinition=18/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_0.ecore#//DistributionManagement/downloadUrl"/>
+    <nested inputs="maven.xsd#//DistributionManagement;XSDComplexTypeDefinition=18/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_0.ecore#//DistributionManagement/relocation"/>
+    <nested inputs="maven.xsd#//DistributionManagement;XSDComplexTypeDefinition=18/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="_0.ecore#//DistributionManagement/status"/>
+  </nested>
+  <nested inputs="maven.xsd#//Profile;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=11/properties;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//PropertiesType1">
+    <nested inputs="maven.xsd#//Profile;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=11/properties;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//PropertiesType1/any"/>
+  </nested>
+  <nested inputs="maven.xsd#//Profile;XSDComplexTypeDefinition=2" outputs="_0.ecore#//Profile">
+    <nested inputs="maven.xsd#//Profile;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//Profile/id"/>
+    <nested inputs="maven.xsd#//Profile;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//Profile/activation"/>
+    <nested inputs="maven.xsd#//Profile;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_0.ecore#//Profile/build"/>
+    <nested inputs="maven.xsd#//Profile;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_0.ecore#//Profile/modules"/>
+    <nested inputs="maven.xsd#//Profile;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_0.ecore#//Profile/repositories"/>
+    <nested inputs="maven.xsd#//Profile;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="_0.ecore#//Profile/pluginRepositories"/>
+    <nested inputs="maven.xsd#//Profile;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=6"
+        outputs="_0.ecore#//Profile/dependencies"/>
+    <nested inputs="maven.xsd#//Profile;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=7"
+        outputs="_0.ecore#//Profile/reports"/>
+    <nested inputs="maven.xsd#//Profile;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=8"
+        outputs="_0.ecore#//Profile/reporting"/>
+    <nested inputs="maven.xsd#//Profile;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=9"
+        outputs="_0.ecore#//Profile/dependencyManagement"/>
+    <nested inputs="maven.xsd#//Profile;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=10"
+        outputs="_0.ecore#//Profile/distributionManagement"/>
+    <nested inputs="maven.xsd#//Profile;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=11"
+        outputs="_0.ecore#//Profile/properties"/>
+  </nested>
+  <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=20/profiles;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//ProfilesType">
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=20/profiles;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//ProfilesType/profile"/>
+  </nested>
+  <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=21/modules;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//ModulesType">
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=21/modules;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//ModulesType/module"/>
+  </nested>
+  <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=22/repositories;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//RepositoriesType">
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=22/repositories;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//RepositoriesType/repository"/>
+  </nested>
+  <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=23/pluginRepositories;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//PluginRepositoriesType">
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=23/pluginRepositories;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//PluginRepositoriesType/pluginRepository"/>
+  </nested>
+  <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=24/dependencies;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//DependenciesType">
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=24/dependencies;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//DependenciesType/dependency"/>
+  </nested>
+  <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=25/reports;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//ReportsType1">
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=25/reports;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//ReportsType1/any"/>
+  </nested>
+  <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=29/properties;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_0.ecore#//PropertiesType2">
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=29/properties;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//PropertiesType2/any"/>
+  </nested>
+  <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition" outputs="_0.ecore#//Model">
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//Model/parent"/>
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//Model/modelVersion"/>
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_0.ecore#//Model/groupId"/>
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_0.ecore#//Model/artifactId"/>
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_0.ecore#//Model/packaging"/>
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="_0.ecore#//Model/name"/>
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=6"
+        outputs="_0.ecore#//Model/version"/>
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=7"
+        outputs="_0.ecore#//Model/description"/>
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=8"
+        outputs="_0.ecore#//Model/url"/>
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=9"
+        outputs="_0.ecore#//Model/prerequisites"/>
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=10"
+        outputs="_0.ecore#//Model/issueManagement"/>
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=11"
+        outputs="_0.ecore#//Model/ciManagement"/>
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=12"
+        outputs="_0.ecore#//Model/inceptionYear"/>
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=13"
+        outputs="_0.ecore#//Model/mailingLists"/>
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=14"
+        outputs="_0.ecore#//Model/developers"/>
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=15"
+        outputs="_0.ecore#//Model/contributors"/>
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=16"
+        outputs="_0.ecore#//Model/licenses"/>
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=17"
+        outputs="_0.ecore#//Model/scm"/>
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=18"
+        outputs="_0.ecore#//Model/organization"/>
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=19"
+        outputs="_0.ecore#//Model/build"/>
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=20"
+        outputs="_0.ecore#//Model/profiles"/>
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=21"
+        outputs="_0.ecore#//Model/modules"/>
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=22"
+        outputs="_0.ecore#//Model/repositories"/>
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=23"
+        outputs="_0.ecore#//Model/pluginRepositories"/>
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=24"
+        outputs="_0.ecore#//Model/dependencies"/>
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=25"
+        outputs="_0.ecore#//Model/reports"/>
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=26"
+        outputs="_0.ecore#//Model/reporting"/>
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=27"
+        outputs="_0.ecore#//Model/dependencyManagement"/>
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=28"
+        outputs="_0.ecore#//Model/distributionManagement"/>
+    <nested inputs="maven.xsd#//Model;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=29"
+        outputs="_0.ecore#//Model/properties"/>
+  </nested>
+  <nested inputs="maven.xsd#//project;XSDElementDeclaration" outputs="_0.ecore#//DocumentRoot/project"/>
+</xsd2ecore:XSD2EcoreMappingRoot>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/net.osgiliath.virgoplans.mm/src" modelPluginID="net.osgiliath.virgoplans.mm"
+    modelName="Plans" importerID="org.eclipse.xsd.ecore.importer" complianceLevel="6.0"
+    copyrightFields="false">
+  <foreignModel>plans.xsd</foreignModel>
+  <genPackages prefix="Plan" basePackage="org.eclipse.virgo.schema" resource="XML"
+      disposableProviderFactory="true" ecorePackage="plan.ecore#/">
+    <genDataTypes ecoreDataType="plan.ecore#//VersionType"/>
+    <genClasses ecoreClass="plan.ecore#//ArtifactType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute plan.ecore#//ArtifactType/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference plan.ecore#//ArtifactType/property"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute plan.ecore#//ArtifactType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute plan.ecore#//ArtifactType/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute plan.ecore#//ArtifactType/version"/>
+    </genClasses>
+    <genClasses ecoreClass="plan.ecore#//AttributesType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute plan.ecore#//AttributesType/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference plan.ecore#//AttributesType/attribute"/>
+    </genClasses>
+    <genClasses ecoreClass="plan.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute plan.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference plan.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference plan.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference plan.ecore#//DocumentRoot/plan"/>
+    </genClasses>
+    <genClasses ecoreClass="plan.ecore#//NameValueType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute plan.ecore#//NameValueType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute plan.ecore#//NameValueType/value"/>
+    </genClasses>
+    <genClasses ecoreClass="plan.ecore#//Plan">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference plan.ecore#//Plan/attributes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute plan.ecore#//Plan/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference plan.ecore#//Plan/artifact"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute plan.ecore#//Plan/atomic"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute plan.ecore#//Plan/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute plan.ecore#//Plan/provisioning"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute plan.ecore#//Plan/scoped"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute plan.ecore#//Plan/version"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

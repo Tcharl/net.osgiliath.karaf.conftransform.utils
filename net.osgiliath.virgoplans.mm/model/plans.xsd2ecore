@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd2ecore:XSD2EcoreMappingRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsd2ecore="http://www.eclipse.org/emf/2002/XSD2Ecore" inputs="plans.xsd#/" outputs="plan.ecore#/" topToBottom="true">
+  <nested inputs="bundleentry://1081.fwk2050696536/cache/www.w3.org/2001/XMLSchema.xsd#//string;XSDSimpleTypeDefinition=9"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  <nested inputs="plans.xsd#//nameValueType;XSDComplexTypeDefinition" outputs="plan.ecore#//NameValueType">
+    <nested inputs="plans.xsd#//nameValueType;XSDComplexTypeDefinition/XSDAttributeUse"
+        outputs="plan.ecore#//NameValueType/name"/>
+    <nested inputs="plans.xsd#//nameValueType;XSDComplexTypeDefinition/XSDAttributeUse=1"
+        outputs="plan.ecore#//NameValueType/value"/>
+  </nested>
+  <nested inputs="plans.xsd#//attributesType;XSDComplexTypeDefinition=1" outputs="plan.ecore#//AttributesType">
+    <nested inputs="plans.xsd#//attributesType;XSDComplexTypeDefinition=1/XSDParticle"
+        outputs="plan.ecore#//AttributesType/group"/>
+    <nested inputs="plans.xsd#//attributesType;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="plan.ecore#//AttributesType/attribute"/>
+  </nested>
+  <nested inputs="plans.xsd#//artifactType;XSDComplexTypeDefinition=2" outputs="plan.ecore#//ArtifactType">
+    <nested inputs="plans.xsd#//artifactType;XSDComplexTypeDefinition=2/XSDParticle"
+        outputs="plan.ecore#//ArtifactType/group"/>
+    <nested inputs="plans.xsd#//artifactType;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="plan.ecore#//ArtifactType/property"/>
+    <nested inputs="plans.xsd#//artifactType;XSDComplexTypeDefinition=2/XSDAttributeUse=1"
+        outputs="plan.ecore#//ArtifactType/name"/>
+    <nested inputs="plans.xsd#//artifactType;XSDComplexTypeDefinition=2/XSDAttributeUse"
+        outputs="plan.ecore#//ArtifactType/type"/>
+    <nested inputs="plans.xsd#//artifactType;XSDComplexTypeDefinition=2/XSDAttributeUse=2"
+        outputs="plan.ecore#//ArtifactType/version"/>
+  </nested>
+  <nested inputs="bundleentry://1081.fwk2050696536/cache/www.w3.org/2001/XMLSchema.xsd#//boolean;XSDSimpleTypeDefinition=10"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//Boolean"/>
+  <nested inputs="plans.xsd#//plan;XSDComplexTypeDefinition=3/XSDAttributeUse=1/version;XSDAttributeDeclaration/XSDSimpleTypeDefinition"
+      outputs="plan.ecore#//VersionType"/>
+  <nested inputs="plans.xsd#//plan;XSDComplexTypeDefinition=3" outputs="plan.ecore#//Plan">
+    <nested inputs="plans.xsd#//plan;XSDComplexTypeDefinition=3/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="plan.ecore#//Plan/attributes"/>
+    <nested inputs="plans.xsd#//plan;XSDComplexTypeDefinition=3/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="plan.ecore#//Plan/group"/>
+    <nested inputs="plans.xsd#//plan;XSDComplexTypeDefinition=3/XSDParticle/XSDModelGroup/XSDParticle=1/XSDModelGroup/XSDParticle"
+        outputs="plan.ecore#//Plan/artifact"/>
+    <nested inputs="plans.xsd#//plan;XSDComplexTypeDefinition=3/XSDAttributeUse=3"
+        outputs="plan.ecore#//Plan/atomic"/>
+    <nested inputs="plans.xsd#//plan;XSDComplexTypeDefinition=3/XSDAttributeUse" outputs="plan.ecore#//Plan/name"/>
+    <nested inputs="plans.xsd#//plan;XSDComplexTypeDefinition=3/XSDAttributeUse=4"
+        outputs="plan.ecore#//Plan/provisioning"/>
+    <nested inputs="plans.xsd#//plan;XSDComplexTypeDefinition=3/XSDAttributeUse=2"
+        outputs="plan.ecore#//Plan/scoped"/>
+    <nested inputs="plans.xsd#//plan;XSDComplexTypeDefinition=3/XSDAttributeUse=1"
+        outputs="plan.ecore#//Plan/version"/>
+  </nested>
+  <nested inputs="plans.xsd#//plan;XSDElementDeclaration" outputs="plan.ecore#//DocumentRoot/plan"/>
+</xsd2ecore:XSD2EcoreMappingRoot>

@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Generator
+Bundle-SymbolicName: net.osgiliath.maven.pom.generator
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: net.osgiliath.maven.mm,
+ net.osgiliath.features.to.maven.m2m
+Bundle-ClassPath: lib/aether-api-1.13.1.jar,
+ lib/log4j-1.2.16.jar,
+ .

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/net.osgiliath.features.mm/src"
+    modelPluginID="net.osgiliath.features.mm" modelName="Features" importerID="org.eclipse.xsd.ecore.importer"
+    complianceLevel="6.0" copyrightFields="false">
+  <foreignModel>features.xsd</foreignModel>
+  <genPackages prefix="_0" basePackage="org.apache.karaf.xmlns.features.v1" resource="XML"
+      disposableProviderFactory="true" ecorePackage="_0.ecore#/">
+    <genDataTypes ecoreDataType="_0.ecore#//FeatureName"/>
+    <genDataTypes ecoreDataType="_0.ecore#//Resolver"/>
+    <genClasses ecoreClass="_0.ecore#//Bundle">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _0.ecore#//Bundle/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _0.ecore#//Bundle/dependency"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _0.ecore#//Bundle/start"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _0.ecore#//Bundle/startLevel"/>
+    </genClasses>
+    <genClasses ecoreClass="_0.ecore#//Config">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _0.ecore#//Config/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _0.ecore#//Config/name"/>
+    </genClasses>
+    <genClasses ecoreClass="_0.ecore#//ConfigFile">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _0.ecore#//ConfigFile/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _0.ecore#//ConfigFile/finalname"/>
+    </genClasses>
+    <genClasses ecoreClass="_0.ecore#//Dependency">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _0.ecore#//Dependency/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _0.ecore#//Dependency/version"/>
+    </genClasses>
+    <genClasses ecoreClass="_0.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute _0.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference _0.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference _0.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _0.ecore#//DocumentRoot/features"/>
+    </genClasses>
+    <genClasses ecoreClass="_0.ecore#//Feature">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute _0.ecore#//Feature/group"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _0.ecore#//Feature/details"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference _0.ecore#//Feature/config"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference _0.ecore#//Feature/configfile"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference _0.ecore#//Feature/feature"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference _0.ecore#//Feature/bundle"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _0.ecore#//Feature/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _0.ecore#//Feature/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _0.ecore#//Feature/resolver"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _0.ecore#//Feature/version"/>
+    </genClasses>
+    <genClasses ecoreClass="_0.ecore#//FeaturesRoot">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute _0.ecore#//FeaturesRoot/group"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _0.ecore#//FeaturesRoot/repository"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference _0.ecore#//FeaturesRoot/feature"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _0.ecore#//FeaturesRoot/name"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Populator
+Bundle-SymbolicName: net.osgiliath.features.populator
+Bundle-Version: 1.0.0.qualifier
+Bundle-Classpath: .,
+ lib/log4j-1.2.16.jar,
+ lib/org.apache.servicemix.bundles.jdom-1.1_4.jar,
+ lib/org.apache.servicemix.bundles.jdom-2.0.2_1.jar
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: net.osgiliath.features.mm
+Export-Package: net.osgiliath.features.populator

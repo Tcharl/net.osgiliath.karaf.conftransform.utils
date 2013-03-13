@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.0.0">
+	<repository>mvn:org.apache.karaf.assemblies.features/enterprise/${karaf.version}/xml/features
+	</repository>
+	<repository>mvn:org.apache.karaf.assemblies.features/standard/${karaf.version}/xml/features
+	</repository>
+	<repository>mvn:${project.groupId}/karaf-features-derby/${project.version}/xml/features
+	</repository>
+	<repository>mvn:${project.groupId}/karaf-features-jpa/${project.version}/xml/features
+	</repository>
+
+	<feature name="activemq" version="${org.apache.activemq.version}">
+		<bundle>mvn:org.apache.xbean/xbean-spring/${xbean-spring.version}</bundle>
+		<bundle>mvn:org.apache.geronimo.specs/geronimo-annotation_1.1_spec/${geronimo-annotation_1.1_spec.version}
+		</bundle>
+		<bundle>mvn:org.apache.geronimo.specs/geronimo-jta_1.1_spec/${geronimo-jta_1.1_spec.version}
+		</bundle>
+		<bundle>mvn:org.apache.geronimo.specs/geronimo-jms_1.1_spec/${geronimo-jms_1.1_spec.version}
+		</bundle>
+		<bundle>mvn:org.apache.geronimo.specs/geronimo-j2ee-management_1.1_spec/${geronimo-j2ee-management_1.1_spec.version}
+		</bundle>
+		<bundle>mvn:commons-pool/commons-pool/${commons-pool.version}
+		</bundle>
+		<bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.commons-collections/${org.apache.servicemix.bundles.commons-collections.version}
+		</bundle>
+		<bundle>mvn:commons-lang/commons-lang/${commons-lang.version}
+		</bundle>
+		<bundle>mvn:commons-codec/commons-codec/${commons-codec.version}
+		</bundle>
+		<bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.oro/${org.apache.servicemix.bundles.oro.version}
+		</bundle>
+		<bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.velocity/${org.apache.servicemix.bundles.velocity.version}
+		</bundle>
+		<bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.jasypt/${org.apache.servicemix.bundles.jasypt.version}
+		</bundle>
+		<bundle>mvn:org.apache.activemq/activemq-core/${org.apache.activemq.version}
+		</bundle>
+		<bundle>mvn:org.apache.activemq/kahadb/${org.apache.activemq.version}
+		</bundle>
+		<bundle>mvn:org.apache.activemq/activemq-console/${org.apache.activemq.version}
+		</bundle>
+		<bundle>mvn:org.apache.activemq/activemq-ra/${org.apache.activemq.version}
+		</bundle>
+		<bundle>mvn:org.apache.activemq/activemq-pool/${org.apache.activemq.version}
+		</bundle>
+		<!-- <bundle>mvn:org.apache.felix/org.apache.felix.gogo.command/${org.apache.felix.gogo.command.version}
+		</bundle>
+		<bundle>mvn:org.apache.felix/org.apache.felix.gogo.runtime/${org.apache.felix.gogo.runtime.version}
+		</bundle>
+		
+		<bundle>mvn:org.apache.activemq/activemq-karaf/${org.apache.activemq.version}
+		</bundle> -->
+		<feature version='1.0.1'>transaction</feature>
+	</feature>
+	<feature name='activemq-pool' version='${org.apache.activemq.version}'>
+		<bundle>mvn:commons-pool/commons-pool/${commons-pool.version}
+		</bundle>
+		<feature version='${org.apache.activemq.version}'>activemq</feature>
+		<bundle>mvn:org.apache.activemq/activemq-pool/${org.apache.activemq.version}
+		</bundle>
+	</feature>
+	<feature name='activemq-optional' version='${org.apache.activemq.version}'>
+		<feature version='${org.apache.activemq.version}'>activemq</feature>
+		<bundle>mvn:org.apache.activemq/activemq-optional/${org.apache.activemq.version}
+		</bundle>
+	</feature>
+	<feature name="activemq-blueprint" version="${org.apache.activemq.version}">
+		<feature version="${org.apache.activemq.version}">activemq</feature>
+		<bundle>mvn:org.apache.commons/commons-jexl/${commons-jexl.version}
+		</bundle>
+		<bundle>mvn:org.apache.xbean/xbean-blueprint/${xbean-blueprint.version}
+		</bundle>
+		<bundle>mvn:org.apache.activemq/activemq-blueprint/${org.apache.activemq.version}
+		</bundle>
+	</feature>
+	<!-- install the jmsconfig.cfg before deploying this -->
+	<feature name='framework.middleware.jms.connectionfactory.exporter'
+		version='${osgiliath.helpers.version}'>
+		<configfile finalname="/etc/amqconfig.cfg">mvn:net.osgiliath.framework/karaf-features-messaging/${project.version}/cfg/activemq</configfile>
+		<!-- <feature version='${karaf.feature.spring31.version}'>spring31-jms</feature>
+		 --><feature version='${karaf.feature.spring.version}'>spring-jms</feature>
+		<feature version='${org.apache.activemq.version}'>activemq-pool</feature>
+		<feature version='${org.apache.activemq.version}'>activemq-optional</feature>
+		<bundle>mvn:net.osgiliath.framework/helpers.activemq.jms.connectionfactory.exporter/${osgiliath.helpers.version}</bundle>
+	</feature>
+	<feature name='activemq-camel' version='${org.apache.activemq.version}'>
+		<feature version='${org.apache.activemq.version}'>activemq-blueprint</feature>
+		<feature version='${osgiliath.helpers.version}'>framework.middleware.jms.connectionfactory.exporter</feature>
+		<feature version='${camel-version}'>camel-jms</feature>
+		<bundle>mvn:org.apache.activemq/activemq-camel/${org.apache.activemq.version}
+		</bundle>
+	</feature>
+	<feature name='framework.middleware.jms.camel' version='${osgiliath.helpers.version}'>
+		<feature version='${org.apache.activemq.version}'>activemq-camel</feature>
+	</feature>
+	<feature name='org.apache.servicemix.bundles.jdom' version='${org.apache.servicemix.bundles.jdom.version}'>
+	<bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.jdom/1.1_4</bundle>
+		<bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.jdom/${org.apache.servicemix.bundles.jdom.version}
+		</bundle>
+	</feature>
+	<feature name="camel-websocket-osgiliath" version="${camel-version}" resolver="(obr)" start-level="50">
+<feature>jetty</feature>
+<!--
+ TODO: remove the dependency to jetty-websocket if KARAF-1153 is resolved and released 
+-->
+<bundle start-level="30">
+mvn:org.eclipse.jetty/jetty-websocket/${karaf.feature.jetty.version}
+</bundle>
+<feature version="${camel-version}">camel-core</feature>
+<bundle>mvn:org.apache.camel/camel-websocket/${camel-version}</bundle>
+</feature>
+	
+</features>

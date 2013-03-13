@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd2ecore:XSD2EcoreMappingRoot xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsd2ecore="http://www.eclipse.org/emf/2002/XSD2Ecore" inputs="features.xsd#/"
+    outputs="_0.ecore#/" topToBottom="true">
+  <nested inputs="bundleentry://886.fwk20196260/cache/www.w3.org/2001/XMLSchema.xsd#//anyURI;XSDSimpleTypeDefinition=25"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//AnyURI"/>
+  <nested inputs="bundleentry://886.fwk20196260/cache/www.w3.org/2001/XMLSchema.xsd#//string;XSDSimpleTypeDefinition=9"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  <nested inputs="features.xsd#//config;XSDComplexTypeDefinition=4" outputs="_0.ecore#//Config">
+    <nested inputs="features.xsd#//config;XSDComplexTypeDefinition=4/XSDAttributeUse"
+        outputs="_0.ecore#//Config/name"/>
+  </nested>
+  <nested inputs="features.xsd#//configFile;XSDComplexTypeDefinition=5" outputs="_0.ecore#//ConfigFile">
+    <nested inputs="features.xsd#//configFile;XSDComplexTypeDefinition=5/XSDAttributeUse"
+        outputs="_0.ecore#//ConfigFile/finalname"/>
+  </nested>
+  <nested inputs="features.xsd#//featureName;XSDSimpleTypeDefinition" outputs="_0.ecore#//FeatureName"/>
+  <nested inputs="features.xsd#//dependency;XSDComplexTypeDefinition=3" outputs="_0.ecore#//Dependency">
+    <nested inputs="features.xsd#//dependency;XSDComplexTypeDefinition=3/XSDAttributeUse"
+        outputs="_0.ecore#//Dependency/version"/>
+  </nested>
+  <nested inputs="bundleentry://886.fwk20196260/cache/www.w3.org/2001/XMLSchema.xsd#//boolean;XSDSimpleTypeDefinition=10"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//Boolean"/>
+  <nested inputs="bundleentry://886.fwk20196260/cache/www.w3.org/2001/XMLSchema.xsd#//int;XSDSimpleTypeDefinition=44"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//Int"/>
+  <nested inputs="features.xsd#//bundle;XSDComplexTypeDefinition=2" outputs="_0.ecore#//Bundle">
+    <nested inputs="features.xsd#//bundle;XSDComplexTypeDefinition=2/XSDAttributeUse=2"
+        outputs="_0.ecore#//Bundle/dependency"/>
+    <nested inputs="features.xsd#//bundle;XSDComplexTypeDefinition=2/XSDAttributeUse=1"
+        outputs="_0.ecore#//Bundle/start"/>
+    <nested inputs="features.xsd#//bundle;XSDComplexTypeDefinition=2/XSDAttributeUse"
+        outputs="_0.ecore#//Bundle/startLevel"/>
+  </nested>
+  <nested inputs="features.xsd#//resolver;XSDSimpleTypeDefinition=1" outputs="_0.ecore#//Resolver"/>
+  <nested inputs="features.xsd#//feature;XSDComplexTypeDefinition=1" outputs="_0.ecore#//Feature">
+    <nested inputs="features.xsd#//feature;XSDComplexTypeDefinition=1/XSDParticle"
+        outputs="_0.ecore#//Feature/group"/>
+    <nested inputs="features.xsd#//feature;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//Feature/details"/>
+    <nested inputs="features.xsd#//feature;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//Feature/config"/>
+    <nested inputs="features.xsd#//feature;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_0.ecore#//Feature/configfile"/>
+    <nested inputs="features.xsd#//feature;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_0.ecore#//Feature/feature"/>
+    <nested inputs="features.xsd#//feature;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_0.ecore#//Feature/bundle"/>
+    <nested inputs="features.xsd#//feature;XSDComplexTypeDefinition=1/XSDAttributeUse=2"
+        outputs="_0.ecore#//Feature/description"/>
+    <nested inputs="features.xsd#//feature;XSDComplexTypeDefinition=1/XSDAttributeUse"
+        outputs="_0.ecore#//Feature/name"/>
+    <nested inputs="features.xsd#//feature;XSDComplexTypeDefinition=1/XSDAttributeUse=3"
+        outputs="_0.ecore#//Feature/resolver"/>
+    <nested inputs="features.xsd#//feature;XSDComplexTypeDefinition=1/XSDAttributeUse=1"
+        outputs="_0.ecore#//Feature/version"/>
+  </nested>
+  <nested inputs="features.xsd#//featuresRoot;XSDComplexTypeDefinition" outputs="_0.ecore#//FeaturesRoot">
+    <nested inputs="features.xsd#//featuresRoot;XSDComplexTypeDefinition/XSDParticle"
+        outputs="_0.ecore#//FeaturesRoot/group"/>
+    <nested inputs="features.xsd#//featuresRoot;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_0.ecore#//FeaturesRoot/repository"/>
+    <nested inputs="features.xsd#//featuresRoot;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_0.ecore#//FeaturesRoot/feature"/>
+    <nested inputs="features.xsd#//featuresRoot;XSDComplexTypeDefinition/XSDAttributeUse"
+        outputs="_0.ecore#//FeaturesRoot/name"/>
+  </nested>
+  <nested inputs="features.xsd#//features;XSDElementDeclaration" outputs="_0.ecore#//DocumentRoot/features"/>
+</xsd2ecore:XSD2EcoreMappingRoot>
