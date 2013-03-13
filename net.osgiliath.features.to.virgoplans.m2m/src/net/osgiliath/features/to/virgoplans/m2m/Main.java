@@ -59,8 +59,7 @@ public class Main {
 			InterruptedException {
 		PropertyConfigurator.configure("log4j.properties");
 		System.setProperty("Virgo", "true");
-		if (null != System.getProperty("M2_REPO"))
-			System.setProperty("M2_REPO", "C:/Users/Charlie/.m2/repository/");
+		
 		ResourceSet rs = new ResourceSetImpl();
 		rs.getResourceFactoryRegistry().getExtensionToFactoryMap()
 				.put("maven", new XMIResourceFactoryImpl());
@@ -112,7 +111,7 @@ public class Main {
 		for (FeaturesRoot featureFile : features) {
 			for (Feature feature : featureFile.getFeature()) {
 				Plan plan = PlanFactory.eINSTANCE.createPlan();
-				System.out.println("******Parsing feature; "
+				log.debug("******Parsing feature; "
 						+ feature.getName());
 				plan.setAtomic(true);
 				plan.setScoped(false);
@@ -134,7 +133,7 @@ public class Main {
 					depPlan.setType("plan");
 					depPlan.setName(feat.getValue());
 					depPlan.setVersion(feat.getVersion());
-
+					plan.getArtifact().add(depPlan);
 				}
 				plans.add(plan);
 			}
@@ -163,7 +162,7 @@ public class Main {
 
 			Artifact pomArtifact = new DefaultArtifact(groupId + ":"
 					+ artifactId + ":" + version);
-			System.out.println("Collecting dependency for bundle:" + groupId
+			log.debug("Collecting dependency for bundle:" + groupId
 					+ ":" + artifactId + ":" + version);
 			List<String> dependencies = new ArrayList<>();
 			dependencies.add(repo.replace('/', ':'));
@@ -269,8 +268,8 @@ public class Main {
 			artifact += ".jar";
 		}
 		path += artifact;
-		System.out.println("Dependency path in your local repo:" + path);
-		System.out.println("Is prensent in your local repo: "
+		log.debug("Dependency path in your local repo:" + path);
+		log.debug("Is prensent in your local repo: "
 				+ new File(path).isFile());
 		if (new File(path).isFile()) {
 			File manifest = getManifestFromZip(path);
@@ -295,13 +294,13 @@ public class Main {
 				if (sCurrentLine.startsWith("Bundle-SymbolicName:")) {
 					symbolicName = sCurrentLine.substring(
 							"Bundle-SymbolicName:".length()).trim();
-					System.out.println("Extracted bundle symbolic name:"
+					log.debug("Extracted bundle symbolic name:"
 							+ symbolicName);
 				}
 				if (sCurrentLine.startsWith("Bundle-Version:")) {
 					version = sCurrentLine
 							.substring("Bundle-Version:".length()).trim();
-					System.out.println("Extracted bundle symbolic version:"
+					log.debug("Extracted bundle symbolic version:"
 							+ version);
 				}
 			}
