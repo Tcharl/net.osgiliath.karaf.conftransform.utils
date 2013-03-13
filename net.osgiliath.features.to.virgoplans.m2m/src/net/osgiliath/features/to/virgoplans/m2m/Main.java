@@ -60,7 +60,7 @@ public class Main {
 		PropertyConfigurator.configure("log4j.properties");
 		System.setProperty("Virgo", "true");
 		if (null != System.getProperty("M2_REPO"))
-		System.setProperty("M2_REPO", "C:/Users/Charlie/.m2/repository/");
+			System.setProperty("M2_REPO", "C:/Users/Charlie/.m2/repository/");
 		ResourceSet rs = new ResourceSetImpl();
 		rs.getResourceFactoryRegistry().getExtensionToFactoryMap()
 				.put("maven", new XMIResourceFactoryImpl());
@@ -92,7 +92,7 @@ public class Main {
 
 		Resource to = null;
 		for (Plan proj : plans) {
-		//for (DocumentRoot proj : plansRoot) {
+			// for (DocumentRoot proj : plansRoot) {
 			try {
 				to = rs.createResource(URI.createURI("plans/out/"
 						+ proj.getName() + ".plan"));
@@ -222,16 +222,20 @@ public class Main {
 		Collection<ArtifactType> ret = new ArrayList<>();
 		for (String dependency : dependencies) {
 			String bundleSymbolicNameAndVersion = findSymbolicNameFromDependendency(dependency);
-			String[] bundleArray = bundleSymbolicNameAndVersion.split(":");
-			if (bundleArray != null)
-				if (bundleArray.length == 2) {
-					ArtifactType virgoPlanArtifact = PlanFactory.eINSTANCE
-							.createArtifactType();
-					virgoPlanArtifact.setName(bundleArray[0]);
-					virgoPlanArtifact.setVersion(bundleArray[1]);
-					virgoPlanArtifact.setType("bundle");
-					ret.add(virgoPlanArtifact);
-				}
+			if (bundleSymbolicNameAndVersion != null) {
+				String[] bundleArray = bundleSymbolicNameAndVersion.split(":");
+				if (bundleArray != null)
+					if (bundleArray.length == 2
+					&& !bundleArray[0].equals("null")
+					&& !bundleArray[1].equals("null")) {
+						ArtifactType virgoPlanArtifact = PlanFactory.eINSTANCE
+								.createArtifactType();
+						virgoPlanArtifact.setName(bundleArray[0]);
+						virgoPlanArtifact.setVersion(bundleArray[1]);
+						virgoPlanArtifact.setType("bundle");
+						ret.add(virgoPlanArtifact);
+					}
+			}
 		}
 		return ret;
 	}
@@ -266,12 +270,13 @@ public class Main {
 		}
 		path += artifact;
 		System.out.println("Dependency path in your local repo:" + path);
-		System.out.println("Is prensent in your local repo: "+new File(path).isFile());
+		System.out.println("Is prensent in your local repo: "
+				+ new File(path).isFile());
 		if (new File(path).isFile()) {
 			File manifest = getManifestFromZip(path);
 			return readManifestAndExtractSymbolicNameAndVersion(manifest);
 		} else {
-			return "";
+			return null;
 		}
 	}
 
@@ -290,12 +295,14 @@ public class Main {
 				if (sCurrentLine.startsWith("Bundle-SymbolicName:")) {
 					symbolicName = sCurrentLine.substring(
 							"Bundle-SymbolicName:".length()).trim();
-					System.out.println("Extracted bundle symbolic name:" + symbolicName);
+					System.out.println("Extracted bundle symbolic name:"
+							+ symbolicName);
 				}
 				if (sCurrentLine.startsWith("Bundle-Version:")) {
 					version = sCurrentLine
 							.substring("Bundle-Version:".length()).trim();
-					System.out.println("Extracted bundle symbolic version:" + version);
+					System.out.println("Extracted bundle symbolic version:"
+							+ version);
 				}
 			}
 
