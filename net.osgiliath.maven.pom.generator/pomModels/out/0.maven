@@ -1,0 +1,1116 @@
+<?xml version="1.0" encoding="ASCII"?>
+<_0:DocumentRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:_0="http://maven.apache.org/POM/4.0.0" xmlns:dependencyPluginArtifactItems="http:///org.apache.maven.dependencyplugin.artifactItems.ecore" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <project>
+    <build>
+      <plugins>
+        <plugin groupId="org.apache.maven.plugins" artifactId="maven-dependency-plugin">
+          <executions>
+            <execution id="copy" phase="install">
+              <goals>
+                <goal>copy</goal>
+              </goals>
+              <configuration>
+                <artifactItemsClass xsi:type="dependencyPluginArtifactItems:artifactItemsClass">
+                  <artifactItem artifactId="geronimo-annotation_1.0_spec" groupId="org.apache.geronimo.specs" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="geronimo-jta_1.1_spec" groupId="org.apache.geronimo.specs" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="geronimo-jms_1.1_spec" groupId="org.apache.geronimo.specs" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="geronimo-j2ee-management_1.1_spec" groupId="org.apache.geronimo.specs" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="commons-pool" groupId="commons-pool" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="commons-lang" groupId="commons-lang" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="commons-collections" groupId="commons-collections" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="commons-codec" groupId="commons-codec" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.apache.servicemix.bundles.oro" groupId="org.apache.servicemix.bundles" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="velocity" groupId="org.apache.velocity" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="commons-collections" groupId="commons-collections" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="commons-lang" groupId="commons-lang" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="oro" groupId="oro" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.apache.servicemix.bundles.jasypt" groupId="org.apache.servicemix.bundles" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="commons-lang" groupId="commons-lang" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="commons-codec" groupId="commons-codec" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="activemq-core" groupId="org.apache.activemq" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="kahadb" groupId="org.apache.activemq" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="activemq-console" groupId="org.apache.activemq" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="activemq-ra" groupId="org.apache.activemq" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="activemq-pool" groupId="org.apache.activemq" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.apache.aries.transaction.manager" groupId="org.apache.aries.transaction" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="geronimo-osgi-registry" groupId="org.apache.geronimo.specs" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.apache.servicemix.specs.activation-api-1.1" groupId="org.apache.servicemix.specs" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="geronimo-annotation_1.0_spec" groupId="org.apache.geronimo.specs" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="geronimo-ws-metadata_2.0_spec" groupId="org.apache.geronimo.specs" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.apache.servicemix.specs.stax-api-1.0" groupId="org.apache.servicemix.specs" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.apache.servicemix.specs.jaxb-api-2.2" groupId="org.apache.servicemix.specs" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.apache.servicemix.specs.stax-api-1.0" groupId="org.apache.servicemix.specs" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="geronimo-activation_1.1_spec" groupId="org.apache.geronimo.specs" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="stax-api" groupId="javax.xml.stream" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="activation" groupId="javax.activation" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.apache.servicemix.specs.jaxws-api-2.2" groupId="org.apache.servicemix.specs" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.apache.servicemix.specs.jaxb-api-2.2" groupId="org.apache.servicemix.specs" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="geronimo-activation_1.1_spec" groupId="org.apache.geronimo.specs" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="stax-api" groupId="javax.xml.stream" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="activation" groupId="javax.activation" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.apache.servicemix.specs.saaj-api-1.3" groupId="org.apache.servicemix.specs" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.apache.servicemix.specs.stax-api-1.0" groupId="org.apache.servicemix.specs" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.apache.servicemix.specs.saaj-api-1.3" groupId="org.apache.servicemix.specs" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="mail" groupId="javax.mail" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.apache.servicemix.specs.jsr311-api-1.1.1" groupId="org.apache.servicemix.specs" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="stax2-api" groupId="org.codehaus.woodstox" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="woodstox-core-asl" groupId="org.codehaus.woodstox" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.apache.servicemix.bundles.jaxb-impl" groupId="org.apache.servicemix.bundles" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.apache.servicemix.bundles.jaxb-xjc" groupId="org.apache.servicemix.bundles" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.apache.servicemix.bundles.jaxb-impl" groupId="org.apache.servicemix.bundles" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.apache.servicemix.bundles.jaxb-xjc" groupId="org.apache.servicemix.bundles" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="commons-codec" groupId="commons-codec" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="axiom-impl" groupId="org.apache.ws.commons.axiom" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="axiom-api" groupId="org.apache.ws.commons.axiom" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="abdera-core" groupId="org.apache.abdera" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="abdera-extensions-main" groupId="org.apache.abdera" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="abdera-i18n" groupId="org.apache.abdera" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="abdera-parser" groupId="org.apache.abdera" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="joda-time" groupId="joda-time" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.apache.servicemix.bundles.opensaml" groupId="org.apache.servicemix.bundles" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="commons-collections" groupId="commons-collections" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="commons-lang" groupId="commons-lang" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="velocity" groupId="velocity" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="esapi" groupId="org.owasp.esapi" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="xml-apis" groupId="xml-apis" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="xercesImpl" groupId="xerces" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="xml-resolver" groupId="xml-resolver" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="xalan" groupId="xalan" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="serializer" groupId="xalan" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="commons-codec" groupId="commons-codec" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="commons-httpclient" groupId="commons-httpclient" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="slf4j-api" groupId="org.slf4j" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="jcl-over-slf4j" groupId="org.slf4j" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="log4j-over-slf4j" groupId="org.slf4j" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="jul-to-slf4j" groupId="org.slf4j" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="joda-time" groupId="joda-time" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="bcprov-jdk15" groupId="org.bouncycastle" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="xmlsec" groupId="org.apache.santuario" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="not-yet-commons-ssl" groupId="ca.juliusdavies" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="jcip-annotations" groupId="net.jcip" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.apache.servicemix.bundles.saaj-impl" groupId="org.apache.servicemix.bundles" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="mimepull" groupId="org.jvnet.mimepull" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.apache.servicemix.specs.saaj-api-1.3" groupId="org.apache.servicemix.specs" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.apache.servicemix.bundles.xmlresolver" groupId="org.apache.servicemix.bundles" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.apache.servicemix.bundles.xerces" groupId="org.apache.servicemix.bundles" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="xml-apis" groupId="xml-apis" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.apache.servicemix.bundles.bcel" groupId="org.apache.servicemix.bundles" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="bcel" groupId="org.apache.bcel" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="jakarta-regexp" groupId="jakarta-regexp" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.apache.servicemix.bundles.xalan" groupId="org.apache.servicemix.bundles" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="serializer" groupId="xalan" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="xml-apis" groupId="xml-apis" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="xmlsec" groupId="org.apache.santuario" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="commons-logging" groupId="commons-logging" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="wss4j" groupId="org.apache.ws.security" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="xmlschema-core" groupId="org.apache.ws.xmlschema" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.apache.servicemix.bundles.wsdl4j" groupId="org.apache.servicemix.bundles" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.apache.servicemix.bundles.xmlresolver" groupId="org.apache.servicemix.bundles" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.apache.servicemix.bundles.fastinfoset" groupId="org.apache.servicemix.bundles" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-api" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-rt-core" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-rt-management" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-karaf-commands" groupId="org.apache.cxf.karaf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="neethi" groupId="org.apache.neethi" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="woodstox-core-asl" groupId="org.codehaus.woodstox" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="stax-api" groupId="javax.xml.stream" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="stax2-api" groupId="org.codehaus.woodstox" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-rt-ws-policy" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-rt-ws-addr" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-rt-ws-rm" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-rt-ws-mex" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.apache.servicemix.bundles.ehcache" groupId="org.apache.servicemix.bundles" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="ehcache-core" groupId="net.sf.ehcache" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="slf4j-api" groupId="org.slf4j" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="ehcache-jmsreplication" groupId="net.sf.ehcache" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="ehcache-core" groupId="net.sf.ehcache" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="ehcache-jmsreplication" groupId="net.sf.ehcache" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-rt-ws-security" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-rt-transports-http" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-rt-transports-http-jetty" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-rt-bindings-xml" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-rt-bindings-soap" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-rt-frontend-simple" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-rt-frontend-jaxws" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="jettison" groupId="org.codehaus.jettison" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="stax-api" groupId="stax" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-rt-bindings-xml" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-rt-rs-extension-providers" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-rt-rs-extension-search" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-rt-frontend-jaxrs" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-rt-rs-security-xml" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-rt-rs-security-cors" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.apache.servicemix.bundles.oauth-provider" groupId="org.apache.servicemix.bundles" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="oauth" groupId="net.oauth.core" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-rt-rs-security-oauth" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-rt-rs-security-oauth2" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-rt-databinding-aegis" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="joda-time" groupId="joda-time" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="joda-convert" groupId="org.joda" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.apache.servicemix.bundles.xpp3" groupId="org.apache.servicemix.bundles" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="jibx-run" groupId="org.jibx" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="joda-time" groupId="joda-time" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="xpp3" groupId="xpp3" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="jibx-bind" groupId="org.jibx" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="jibx-run" groupId="org.jibx" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="joda-time" groupId="joda-time" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="xpp3" groupId="xpp3" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="bcel" groupId="bcel" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="regexp" groupId="regexp" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="log4j" groupId="log4j" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="qdox" groupId="com.thoughtworks.qdox" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="jibx-schema" groupId="org.jibx" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="jibx-bind" groupId="org.jibx" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="jibx-run" groupId="org.jibx" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="joda-time" groupId="joda-time" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="xpp3" groupId="xpp3" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="bcel" groupId="bcel" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="regexp" groupId="regexp" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="log4j" groupId="log4j" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="qdox" groupId="com.thoughtworks.qdox" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="jibx-extras" groupId="org.jibx" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="dom4j" groupId="dom4j" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="xml-apis" groupId="xml-apis" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="jdom" groupId="org.jdom" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="jibx-tools" groupId="org.jibx" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="jibx-schema" groupId="org.jibx" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="jibx-bind" groupId="org.jibx" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="jibx-run" groupId="org.jibx" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="joda-time" groupId="joda-time" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="xpp3" groupId="xpp3" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="bcel" groupId="bcel" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="regexp" groupId="regexp" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="log4j" groupId="log4j" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="qdox" groupId="com.thoughtworks.qdox" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="jibx-extras" groupId="org.jibx" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="dom4j" groupId="dom4j" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="xml-apis" groupId="xml-apis" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="jdom" groupId="org.jdom" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.eclipse.core.contenttype" groupId="org.jibx.config.3rdparty.org.eclipse" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.eclipse.core.jobs" groupId="org.jibx.config.3rdparty.org.eclipse" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.eclipse.core.resources" groupId="org.jibx.config.3rdparty.org.eclipse" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.eclipse.core.runtime" groupId="org.jibx.config.3rdparty.org.eclipse" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.eclipse.equinox.common" groupId="org.jibx.config.3rdparty.org.eclipse" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.eclipse.equinox.preferences" groupId="org.jibx.config.3rdparty.org.eclipse" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.eclipse.jdt.core" groupId="org.jibx.config.3rdparty.org.eclipse" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.eclipse.osgi" groupId="org.jibx.config.3rdparty.org.eclipse" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.eclipse.text" groupId="org.jibx.config.3rdparty.org.eclipse" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-rt-databinding-jibx" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-rt-databinding-jaxb" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.apache.servicemix.bundles.xmlbeans" groupId="org.apache.servicemix.bundles" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-rt-databinding-xmlbeans" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-rt-features-clustering" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-rt-bindings-corba" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-rt-bindings-coloc" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-rt-bindings-object" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-rt-transports-local" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-rt-transports-jms" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-rt-javascript" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.apache.servicemix.bundles.rhino" groupId="org.apache.servicemix.bundles" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-rt-frontend-js" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="commons-lang" groupId="commons-lang" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-xjc-runtime" groupId="org.apache.cxf.xjc-utils" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="commons-lang" groupId="commons-lang" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="velocity" groupId="org.apache.velocity" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="commons-collections" groupId="commons-collections" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-tools-common" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-tools-java2ws" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-tools-misctools" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-tools-validator" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-tools-wadlto-jaxrs" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-tools-wsdlto-core" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-tools-wsdlto-databinding-jaxb" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-tools-wsdlto-frontend-javascript" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-tools-wsdlto-frontend-jaxws" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-bundle-compatible" groupId="org.apache.cxf" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="hazelcast" groupId="com.hazelcast" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="org.apache.servicemix.bundles.ehcache" groupId="org.apache.servicemix.bundles" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="ehcache-core" groupId="net.sf.ehcache" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="slf4j-api" groupId="org.slf4j" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="ehcache-jmsreplication" groupId="net.sf.ehcache" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="ehcache-core" groupId="net.sf.ehcache" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="ehcache-jmsreplication" groupId="net.sf.ehcache" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-services-sts-core" groupId="org.apache.cxf.services.sts" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-services-wsn-api" groupId="org.apache.cxf.services.wsn" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                  <artifactItem artifactId="cxf-services-wsn-core" groupId="org.apache.cxf.services.wsn" type="jar" overWrite="false" outputDirectory="${virgo.path}/repository/usr"/>
+                </artifactItemsClass>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
+      </plugins>
+    </build>
+    <dependencies>
+      <dependency groupId="org.apache.geronimo.specs" artifactId="geronimo-annotation_1.0_spec" scope="provided"/>
+      <dependency groupId="org.apache.geronimo.specs" artifactId="geronimo-jta_1.1_spec" scope="provided"/>
+      <dependency groupId="org.apache.geronimo.specs" artifactId="geronimo-jms_1.1_spec" scope="provided"/>
+      <dependency groupId="org.apache.geronimo.specs" artifactId="geronimo-j2ee-management_1.1_spec" scope="provided"/>
+      <dependency groupId="commons-pool" artifactId="commons-pool" scope="provided"/>
+      <dependency groupId="commons-lang" artifactId="commons-lang" scope="provided"/>
+      <dependency groupId="commons-collections" artifactId="commons-collections" scope="provided"/>
+      <dependency groupId="commons-codec" artifactId="commons-codec" scope="provided"/>
+      <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.oro" scope="provided"/>
+      <dependency groupId="org.apache.velocity" artifactId="velocity" scope="provided"/>
+      <dependency groupId="commons-collections" artifactId="commons-collections" scope="provided"/>
+      <dependency groupId="commons-lang" artifactId="commons-lang" scope="provided"/>
+      <dependency groupId="oro" artifactId="oro" scope="provided"/>
+      <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.jasypt" scope="provided"/>
+      <dependency groupId="commons-lang" artifactId="commons-lang" scope="provided"/>
+      <dependency groupId="commons-codec" artifactId="commons-codec" scope="provided"/>
+      <dependency groupId="org.apache.activemq" artifactId="activemq-core" scope="provided"/>
+      <dependency groupId="org.apache.activemq" artifactId="kahadb" scope="provided"/>
+      <dependency groupId="org.apache.activemq" artifactId="activemq-console" scope="provided"/>
+      <dependency groupId="org.apache.activemq" artifactId="activemq-ra" scope="provided"/>
+      <dependency groupId="org.apache.activemq" artifactId="activemq-pool" scope="provided"/>
+      <dependency groupId="org.apache.aries.transaction" artifactId="org.apache.aries.transaction.manager" scope="provided"/>
+      <dependency groupId="org.apache.geronimo.specs" artifactId="geronimo-osgi-registry" scope="provided"/>
+      <dependency groupId="org.apache.servicemix.specs" artifactId="org.apache.servicemix.specs.activation-api-1.1" scope="provided"/>
+      <dependency groupId="org.apache.geronimo.specs" artifactId="geronimo-annotation_1.0_spec" scope="provided"/>
+      <dependency groupId="org.apache.geronimo.specs" artifactId="geronimo-ws-metadata_2.0_spec" scope="provided"/>
+      <dependency groupId="org.apache.servicemix.specs" artifactId="org.apache.servicemix.specs.stax-api-1.0" scope="provided"/>
+      <dependency groupId="org.apache.servicemix.specs" artifactId="org.apache.servicemix.specs.jaxb-api-2.2" scope="provided"/>
+      <dependency groupId="org.apache.servicemix.specs" artifactId="org.apache.servicemix.specs.stax-api-1.0" scope="provided"/>
+      <dependency groupId="org.apache.geronimo.specs" artifactId="geronimo-activation_1.1_spec" scope="provided"/>
+      <dependency groupId="javax.xml.stream" artifactId="stax-api" scope="provided"/>
+      <dependency groupId="javax.activation" artifactId="activation" scope="provided"/>
+      <dependency groupId="org.apache.servicemix.specs" artifactId="org.apache.servicemix.specs.jaxws-api-2.2" scope="provided"/>
+      <dependency groupId="org.apache.servicemix.specs" artifactId="org.apache.servicemix.specs.jaxb-api-2.2" scope="provided"/>
+      <dependency groupId="org.apache.geronimo.specs" artifactId="geronimo-activation_1.1_spec" scope="provided"/>
+      <dependency groupId="javax.xml.stream" artifactId="stax-api" scope="provided"/>
+      <dependency groupId="javax.activation" artifactId="activation" scope="provided"/>
+      <dependency groupId="org.apache.servicemix.specs" artifactId="org.apache.servicemix.specs.saaj-api-1.3" scope="provided"/>
+      <dependency groupId="org.apache.servicemix.specs" artifactId="org.apache.servicemix.specs.stax-api-1.0" scope="provided"/>
+      <dependency groupId="org.apache.servicemix.specs" artifactId="org.apache.servicemix.specs.saaj-api-1.3" scope="provided"/>
+      <dependency groupId="javax.mail" artifactId="mail" scope="provided"/>
+      <dependency groupId="org.apache.servicemix.specs" artifactId="org.apache.servicemix.specs.jsr311-api-1.1.1" scope="provided"/>
+      <dependency groupId="org.codehaus.woodstox" artifactId="stax2-api" scope="provided"/>
+      <dependency groupId="org.codehaus.woodstox" artifactId="woodstox-core-asl" scope="provided"/>
+      <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.jaxb-impl" scope="provided"/>
+      <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.jaxb-xjc" scope="provided"/>
+      <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.jaxb-impl" scope="provided"/>
+      <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.jaxb-xjc" scope="provided"/>
+      <dependency groupId="commons-codec" artifactId="commons-codec" scope="provided"/>
+      <dependency groupId="org.apache.ws.commons.axiom" artifactId="axiom-impl" scope="provided"/>
+      <dependency groupId="org.apache.ws.commons.axiom" artifactId="axiom-api" scope="provided"/>
+      <dependency groupId="org.apache.abdera" artifactId="abdera-core" scope="provided"/>
+      <dependency groupId="org.apache.abdera" artifactId="abdera-extensions-main" scope="provided"/>
+      <dependency groupId="org.apache.abdera" artifactId="abdera-i18n" scope="provided"/>
+      <dependency groupId="org.apache.abdera" artifactId="abdera-parser" scope="provided"/>
+      <dependency groupId="joda-time" artifactId="joda-time" scope="provided"/>
+      <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.opensaml" scope="provided"/>
+      <dependency groupId="commons-collections" artifactId="commons-collections" scope="provided"/>
+      <dependency groupId="commons-lang" artifactId="commons-lang" scope="provided"/>
+      <dependency groupId="velocity" artifactId="velocity" scope="provided"/>
+      <dependency groupId="org.owasp.esapi" artifactId="esapi" scope="provided"/>
+      <dependency groupId="xml-apis" artifactId="xml-apis" scope="provided"/>
+      <dependency groupId="xerces" artifactId="xercesImpl" scope="provided"/>
+      <dependency groupId="xml-resolver" artifactId="xml-resolver" scope="provided"/>
+      <dependency groupId="xalan" artifactId="xalan" scope="provided"/>
+      <dependency groupId="xalan" artifactId="serializer" scope="provided"/>
+      <dependency groupId="commons-codec" artifactId="commons-codec" scope="provided"/>
+      <dependency groupId="commons-httpclient" artifactId="commons-httpclient" scope="provided"/>
+      <dependency groupId="org.slf4j" artifactId="slf4j-api" scope="provided"/>
+      <dependency groupId="org.slf4j" artifactId="jcl-over-slf4j" scope="provided"/>
+      <dependency groupId="org.slf4j" artifactId="log4j-over-slf4j" scope="provided"/>
+      <dependency groupId="org.slf4j" artifactId="jul-to-slf4j" scope="provided"/>
+      <dependency groupId="joda-time" artifactId="joda-time" scope="provided"/>
+      <dependency groupId="org.bouncycastle" artifactId="bcprov-jdk15" scope="provided"/>
+      <dependency groupId="org.apache.santuario" artifactId="xmlsec" scope="provided"/>
+      <dependency groupId="ca.juliusdavies" artifactId="not-yet-commons-ssl" scope="provided"/>
+      <dependency groupId="net.jcip" artifactId="jcip-annotations" scope="provided"/>
+      <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.saaj-impl" scope="provided"/>
+      <dependency groupId="org.jvnet.mimepull" artifactId="mimepull" scope="provided"/>
+      <dependency groupId="org.apache.servicemix.specs" artifactId="org.apache.servicemix.specs.saaj-api-1.3" scope="provided"/>
+      <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.xmlresolver" scope="provided"/>
+      <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.xerces" scope="provided"/>
+      <dependency groupId="xml-apis" artifactId="xml-apis" scope="provided"/>
+      <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.bcel" scope="provided"/>
+      <dependency groupId="org.apache.bcel" artifactId="bcel" scope="provided"/>
+      <dependency groupId="jakarta-regexp" artifactId="jakarta-regexp" scope="provided"/>
+      <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.xalan" scope="provided"/>
+      <dependency groupId="xalan" artifactId="serializer" scope="provided"/>
+      <dependency groupId="xml-apis" artifactId="xml-apis" scope="provided"/>
+      <dependency groupId="org.apache.santuario" artifactId="xmlsec" scope="provided"/>
+      <dependency groupId="commons-logging" artifactId="commons-logging" scope="provided"/>
+      <dependency groupId="org.apache.ws.security" artifactId="wss4j" scope="provided"/>
+      <dependency groupId="org.apache.ws.xmlschema" artifactId="xmlschema-core" scope="provided"/>
+      <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.wsdl4j" scope="provided"/>
+      <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.xmlresolver" scope="provided"/>
+      <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.fastinfoset" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-api" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-rt-core" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-rt-management" scope="provided"/>
+      <dependency groupId="org.apache.cxf.karaf" artifactId="cxf-karaf-commands" scope="provided"/>
+      <dependency groupId="org.apache.neethi" artifactId="neethi" scope="provided"/>
+      <dependency groupId="org.codehaus.woodstox" artifactId="woodstox-core-asl" scope="provided"/>
+      <dependency groupId="javax.xml.stream" artifactId="stax-api" scope="provided"/>
+      <dependency groupId="org.codehaus.woodstox" artifactId="stax2-api" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-rt-ws-policy" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-rt-ws-addr" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-rt-ws-rm" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-rt-ws-mex" scope="provided"/>
+      <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.ehcache" scope="provided"/>
+      <dependency groupId="net.sf.ehcache" artifactId="ehcache-core" scope="provided"/>
+      <dependency groupId="org.slf4j" artifactId="slf4j-api" scope="provided"/>
+      <dependency groupId="net.sf.ehcache" artifactId="ehcache-jmsreplication" scope="provided"/>
+      <dependency groupId="net.sf.ehcache" artifactId="ehcache-core" scope="provided"/>
+      <dependency groupId="net.sf.ehcache" artifactId="ehcache-jmsreplication" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-rt-ws-security" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-rt-transports-http" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-rt-transports-http-jetty" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-rt-bindings-xml" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-rt-bindings-soap" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-rt-frontend-simple" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-rt-frontend-jaxws" scope="provided"/>
+      <dependency groupId="org.codehaus.jettison" artifactId="jettison" scope="provided"/>
+      <dependency groupId="stax" artifactId="stax-api" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-rt-bindings-xml" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-rt-rs-extension-providers" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-rt-rs-extension-search" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-rt-frontend-jaxrs" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-rt-rs-security-xml" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-rt-rs-security-cors" scope="provided"/>
+      <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.oauth-provider" scope="provided"/>
+      <dependency groupId="net.oauth.core" artifactId="oauth" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-rt-rs-security-oauth" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-rt-rs-security-oauth2" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-rt-databinding-aegis" scope="provided"/>
+      <dependency groupId="joda-time" artifactId="joda-time" scope="provided"/>
+      <dependency groupId="org.joda" artifactId="joda-convert" scope="provided"/>
+      <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.xpp3" scope="provided"/>
+      <dependency groupId="org.jibx" artifactId="jibx-run" scope="provided"/>
+      <dependency groupId="joda-time" artifactId="joda-time" scope="provided"/>
+      <dependency groupId="xpp3" artifactId="xpp3" scope="provided"/>
+      <dependency groupId="org.jibx" artifactId="jibx-bind" scope="provided"/>
+      <dependency groupId="org.jibx" artifactId="jibx-run" scope="provided"/>
+      <dependency groupId="joda-time" artifactId="joda-time" scope="provided"/>
+      <dependency groupId="xpp3" artifactId="xpp3" scope="provided"/>
+      <dependency groupId="bcel" artifactId="bcel" scope="provided"/>
+      <dependency groupId="regexp" artifactId="regexp" scope="provided"/>
+      <dependency groupId="log4j" artifactId="log4j" scope="provided"/>
+      <dependency groupId="com.thoughtworks.qdox" artifactId="qdox" scope="provided"/>
+      <dependency groupId="org.jibx" artifactId="jibx-schema" scope="provided"/>
+      <dependency groupId="org.jibx" artifactId="jibx-bind" scope="provided"/>
+      <dependency groupId="org.jibx" artifactId="jibx-run" scope="provided"/>
+      <dependency groupId="joda-time" artifactId="joda-time" scope="provided"/>
+      <dependency groupId="xpp3" artifactId="xpp3" scope="provided"/>
+      <dependency groupId="bcel" artifactId="bcel" scope="provided"/>
+      <dependency groupId="regexp" artifactId="regexp" scope="provided"/>
+      <dependency groupId="log4j" artifactId="log4j" scope="provided"/>
+      <dependency groupId="com.thoughtworks.qdox" artifactId="qdox" scope="provided"/>
+      <dependency groupId="org.jibx" artifactId="jibx-extras" scope="provided"/>
+      <dependency groupId="dom4j" artifactId="dom4j" scope="provided"/>
+      <dependency groupId="xml-apis" artifactId="xml-apis" scope="provided"/>
+      <dependency groupId="org.jdom" artifactId="jdom" scope="provided"/>
+      <dependency groupId="org.jibx" artifactId="jibx-tools" scope="provided"/>
+      <dependency groupId="org.jibx" artifactId="jibx-schema" scope="provided"/>
+      <dependency groupId="org.jibx" artifactId="jibx-bind" scope="provided"/>
+      <dependency groupId="org.jibx" artifactId="jibx-run" scope="provided"/>
+      <dependency groupId="joda-time" artifactId="joda-time" scope="provided"/>
+      <dependency groupId="xpp3" artifactId="xpp3" scope="provided"/>
+      <dependency groupId="bcel" artifactId="bcel" scope="provided"/>
+      <dependency groupId="regexp" artifactId="regexp" scope="provided"/>
+      <dependency groupId="log4j" artifactId="log4j" scope="provided"/>
+      <dependency groupId="com.thoughtworks.qdox" artifactId="qdox" scope="provided"/>
+      <dependency groupId="org.jibx" artifactId="jibx-extras" scope="provided"/>
+      <dependency groupId="dom4j" artifactId="dom4j" scope="provided"/>
+      <dependency groupId="xml-apis" artifactId="xml-apis" scope="provided"/>
+      <dependency groupId="org.jdom" artifactId="jdom" scope="provided"/>
+      <dependency groupId="org.jibx.config.3rdparty.org.eclipse" artifactId="org.eclipse.core.contenttype" scope="provided"/>
+      <dependency groupId="org.jibx.config.3rdparty.org.eclipse" artifactId="org.eclipse.core.jobs" scope="provided"/>
+      <dependency groupId="org.jibx.config.3rdparty.org.eclipse" artifactId="org.eclipse.core.resources" scope="provided"/>
+      <dependency groupId="org.jibx.config.3rdparty.org.eclipse" artifactId="org.eclipse.core.runtime" scope="provided"/>
+      <dependency groupId="org.jibx.config.3rdparty.org.eclipse" artifactId="org.eclipse.equinox.common" scope="provided"/>
+      <dependency groupId="org.jibx.config.3rdparty.org.eclipse" artifactId="org.eclipse.equinox.preferences" scope="provided"/>
+      <dependency groupId="org.jibx.config.3rdparty.org.eclipse" artifactId="org.eclipse.jdt.core" scope="provided"/>
+      <dependency groupId="org.jibx.config.3rdparty.org.eclipse" artifactId="org.eclipse.osgi" scope="provided"/>
+      <dependency groupId="org.jibx.config.3rdparty.org.eclipse" artifactId="org.eclipse.text" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-rt-databinding-jibx" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-rt-databinding-jaxb" scope="provided"/>
+      <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.xmlbeans" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-rt-databinding-xmlbeans" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-rt-features-clustering" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-rt-bindings-corba" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-rt-bindings-coloc" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-rt-bindings-object" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-rt-transports-local" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-rt-transports-jms" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-rt-javascript" scope="provided"/>
+      <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.rhino" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-rt-frontend-js" scope="provided"/>
+      <dependency groupId="commons-lang" artifactId="commons-lang" scope="provided"/>
+      <dependency groupId="org.apache.cxf.xjc-utils" artifactId="cxf-xjc-runtime" scope="provided"/>
+      <dependency groupId="commons-lang" artifactId="commons-lang" scope="provided"/>
+      <dependency groupId="org.apache.velocity" artifactId="velocity" scope="provided"/>
+      <dependency groupId="commons-collections" artifactId="commons-collections" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-tools-common" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-tools-java2ws" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-tools-misctools" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-tools-validator" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-tools-wadlto-jaxrs" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-tools-wsdlto-core" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-tools-wsdlto-databinding-jaxb" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-tools-wsdlto-frontend-javascript" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-tools-wsdlto-frontend-jaxws" scope="provided"/>
+      <dependency groupId="org.apache.cxf" artifactId="cxf-bundle-compatible" scope="provided"/>
+      <dependency groupId="com.hazelcast" artifactId="hazelcast" scope="provided"/>
+      <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.ehcache" scope="provided"/>
+      <dependency groupId="net.sf.ehcache" artifactId="ehcache-core" scope="provided"/>
+      <dependency groupId="org.slf4j" artifactId="slf4j-api" scope="provided"/>
+      <dependency groupId="net.sf.ehcache" artifactId="ehcache-jmsreplication" scope="provided"/>
+      <dependency groupId="net.sf.ehcache" artifactId="ehcache-core" scope="provided"/>
+      <dependency groupId="net.sf.ehcache" artifactId="ehcache-jmsreplication" scope="provided"/>
+      <dependency groupId="org.apache.cxf.services.sts" artifactId="cxf-services-sts-core" scope="provided"/>
+      <dependency groupId="org.apache.cxf.services.wsn" artifactId="cxf-services-wsn-api" scope="provided"/>
+      <dependency groupId="org.apache.cxf.services.wsn" artifactId="cxf-services-wsn-core" scope="provided"/>
+    </dependencies>
+    <dependencyManagement>
+      <dependencies>
+        <dependency groupId="org.apache.geronimo.specs" artifactId="geronimo-annotation_1.0_spec" version="${geronimo-annotation_1.0_spec.version}"/>
+        <dependency groupId="org.apache.geronimo.specs" artifactId="geronimo-jta_1.1_spec" version="${geronimo-jta_1.1_spec.version}"/>
+        <dependency groupId="org.apache.geronimo.specs" artifactId="geronimo-jms_1.1_spec" version="${geronimo-jms_1.1_spec.version}"/>
+        <dependency groupId="org.apache.geronimo.specs" artifactId="geronimo-j2ee-management_1.1_spec" version="${geronimo-j2ee-management_1.1_spec.version}"/>
+        <dependency groupId="commons-pool" artifactId="commons-pool" version="${commons-pool.version}"/>
+        <dependency groupId="commons-lang" artifactId="commons-lang" version="${commons-lang.version}"/>
+        <dependency groupId="commons-collections" artifactId="commons-collections" version="${commons-collections.version}"/>
+        <dependency groupId="commons-codec" artifactId="commons-codec" version="${commons-codec.version}"/>
+        <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.oro" version="${org.apache.servicemix.bundles.oro.version}"/>
+        <dependency groupId="org.apache.velocity" artifactId="velocity" version="${velocity.version}"/>
+        <dependency groupId="commons-collections" artifactId="commons-collections" version="${commons-collections.version}"/>
+        <dependency groupId="commons-lang" artifactId="commons-lang" version="${commons-lang.version}"/>
+        <dependency groupId="oro" artifactId="oro" version="${oro.version}"/>
+        <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.jasypt" version="${org.apache.servicemix.bundles.jasypt.version}"/>
+        <dependency groupId="commons-lang" artifactId="commons-lang" version="${commons-lang.version}"/>
+        <dependency groupId="commons-codec" artifactId="commons-codec" version="${commons-codec.version}"/>
+        <dependency groupId="org.apache.activemq" artifactId="activemq-core" version="${activemq-core.version}"/>
+        <dependency groupId="org.apache.activemq" artifactId="kahadb" version="${kahadb.version}"/>
+        <dependency groupId="org.apache.activemq" artifactId="activemq-console" version="${activemq-console.version}"/>
+        <dependency groupId="org.apache.activemq" artifactId="activemq-ra" version="${activemq-ra.version}"/>
+        <dependency groupId="org.apache.activemq" artifactId="activemq-pool" version="${activemq-pool.version}"/>
+        <dependency groupId="org.apache.aries.transaction" artifactId="org.apache.aries.transaction.manager" version="${org.apache.aries.transaction.manager.version}"/>
+        <dependency groupId="org.apache.geronimo.specs" artifactId="geronimo-osgi-registry" version="${geronimo-osgi-registry.version}"/>
+        <dependency groupId="org.apache.servicemix.specs" artifactId="org.apache.servicemix.specs.activation-api-1.1" version="${org.apache.servicemix.specs.activation-api-1.1.version}"/>
+        <dependency groupId="org.apache.geronimo.specs" artifactId="geronimo-annotation_1.0_spec" version="${geronimo-annotation_1.0_spec.version}"/>
+        <dependency groupId="org.apache.geronimo.specs" artifactId="geronimo-ws-metadata_2.0_spec" version="${geronimo-ws-metadata_2.0_spec.version}"/>
+        <dependency groupId="org.apache.servicemix.specs" artifactId="org.apache.servicemix.specs.stax-api-1.0" version="${org.apache.servicemix.specs.stax-api-1.0.version}"/>
+        <dependency groupId="org.apache.servicemix.specs" artifactId="org.apache.servicemix.specs.jaxb-api-2.2" version="${org.apache.servicemix.specs.jaxb-api-2.2.version}"/>
+        <dependency groupId="org.apache.servicemix.specs" artifactId="org.apache.servicemix.specs.stax-api-1.0" version="${org.apache.servicemix.specs.stax-api-1.0.version}"/>
+        <dependency groupId="org.apache.geronimo.specs" artifactId="geronimo-activation_1.1_spec" version="${geronimo-activation_1.1_spec.version}"/>
+        <dependency groupId="javax.xml.stream" artifactId="stax-api" version="${stax-api.version}"/>
+        <dependency groupId="javax.activation" artifactId="activation" version="${activation.version}"/>
+        <dependency groupId="org.apache.servicemix.specs" artifactId="org.apache.servicemix.specs.jaxws-api-2.2" version="${org.apache.servicemix.specs.jaxws-api-2.2.version}"/>
+        <dependency groupId="org.apache.servicemix.specs" artifactId="org.apache.servicemix.specs.jaxb-api-2.2" version="${org.apache.servicemix.specs.jaxb-api-2.2.version}"/>
+        <dependency groupId="org.apache.geronimo.specs" artifactId="geronimo-activation_1.1_spec" version="${geronimo-activation_1.1_spec.version}"/>
+        <dependency groupId="javax.xml.stream" artifactId="stax-api" version="${stax-api.version}"/>
+        <dependency groupId="javax.activation" artifactId="activation" version="${activation.version}"/>
+        <dependency groupId="org.apache.servicemix.specs" artifactId="org.apache.servicemix.specs.saaj-api-1.3" version="${org.apache.servicemix.specs.saaj-api-1.3.version}"/>
+        <dependency groupId="org.apache.servicemix.specs" artifactId="org.apache.servicemix.specs.stax-api-1.0" version="${org.apache.servicemix.specs.stax-api-1.0.version}"/>
+        <dependency groupId="org.apache.servicemix.specs" artifactId="org.apache.servicemix.specs.saaj-api-1.3" version="${org.apache.servicemix.specs.saaj-api-1.3.version}"/>
+        <dependency groupId="javax.mail" artifactId="mail" version="${mail.version}"/>
+        <dependency groupId="org.apache.servicemix.specs" artifactId="org.apache.servicemix.specs.jsr311-api-1.1.1" version="${org.apache.servicemix.specs.jsr311-api-1.1.1.version}"/>
+        <dependency groupId="org.codehaus.woodstox" artifactId="stax2-api" version="${stax2-api.version}"/>
+        <dependency groupId="org.codehaus.woodstox" artifactId="woodstox-core-asl" version="${woodstox-core-asl.version}"/>
+        <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.jaxb-impl" version="${org.apache.servicemix.bundles.jaxb-impl.version}"/>
+        <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.jaxb-xjc" version="${org.apache.servicemix.bundles.jaxb-xjc.version}"/>
+        <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.jaxb-impl" version="${org.apache.servicemix.bundles.jaxb-impl.version}"/>
+        <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.jaxb-xjc" version="${org.apache.servicemix.bundles.jaxb-xjc.version}"/>
+        <dependency groupId="commons-codec" artifactId="commons-codec" version="${commons-codec.version}"/>
+        <dependency groupId="org.apache.ws.commons.axiom" artifactId="axiom-impl" version="${axiom-impl.version}"/>
+        <dependency groupId="org.apache.ws.commons.axiom" artifactId="axiom-api" version="${axiom-api.version}"/>
+        <dependency groupId="org.apache.abdera" artifactId="abdera-core" version="${abdera-core.version}"/>
+        <dependency groupId="org.apache.abdera" artifactId="abdera-extensions-main" version="${abdera-extensions-main.version}"/>
+        <dependency groupId="org.apache.abdera" artifactId="abdera-i18n" version="${abdera-i18n.version}"/>
+        <dependency groupId="org.apache.abdera" artifactId="abdera-parser" version="${abdera-parser.version}"/>
+        <dependency groupId="joda-time" artifactId="joda-time" version="${joda-time.version}"/>
+        <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.opensaml" version="${org.apache.servicemix.bundles.opensaml.version}"/>
+        <dependency groupId="commons-collections" artifactId="commons-collections" version="${commons-collections.version}"/>
+        <dependency groupId="commons-lang" artifactId="commons-lang" version="${commons-lang.version}"/>
+        <dependency groupId="velocity" artifactId="velocity" version="${velocity.version}"/>
+        <dependency groupId="org.owasp.esapi" artifactId="esapi" version="${esapi.version}"/>
+        <dependency groupId="xml-apis" artifactId="xml-apis" version="${xml-apis.version}"/>
+        <dependency groupId="xerces" artifactId="xercesImpl" version="${xercesImpl.version}"/>
+        <dependency groupId="xml-resolver" artifactId="xml-resolver" version="${xml-resolver.version}"/>
+        <dependency groupId="xalan" artifactId="xalan" version="${xalan.version}"/>
+        <dependency groupId="xalan" artifactId="serializer" version="${serializer.version}"/>
+        <dependency groupId="commons-codec" artifactId="commons-codec" version="${commons-codec.version}"/>
+        <dependency groupId="commons-httpclient" artifactId="commons-httpclient" version="${commons-httpclient.version}"/>
+        <dependency groupId="org.slf4j" artifactId="slf4j-api" version="${slf4j-api.version}"/>
+        <dependency groupId="org.slf4j" artifactId="jcl-over-slf4j" version="${jcl-over-slf4j.version}"/>
+        <dependency groupId="org.slf4j" artifactId="log4j-over-slf4j" version="${log4j-over-slf4j.version}"/>
+        <dependency groupId="org.slf4j" artifactId="jul-to-slf4j" version="${jul-to-slf4j.version}"/>
+        <dependency groupId="joda-time" artifactId="joda-time" version="${joda-time.version}"/>
+        <dependency groupId="org.bouncycastle" artifactId="bcprov-jdk15" version="${bcprov-jdk15.version}"/>
+        <dependency groupId="org.apache.santuario" artifactId="xmlsec" version="${xmlsec.version}"/>
+        <dependency groupId="ca.juliusdavies" artifactId="not-yet-commons-ssl" version="${not-yet-commons-ssl.version}"/>
+        <dependency groupId="net.jcip" artifactId="jcip-annotations" version="${jcip-annotations.version}"/>
+        <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.saaj-impl" version="${org.apache.servicemix.bundles.saaj-impl.version}"/>
+        <dependency groupId="org.jvnet.mimepull" artifactId="mimepull" version="${mimepull.version}"/>
+        <dependency groupId="org.apache.servicemix.specs" artifactId="org.apache.servicemix.specs.saaj-api-1.3" version="${org.apache.servicemix.specs.saaj-api-1.3.version}"/>
+        <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.xmlresolver" version="${org.apache.servicemix.bundles.xmlresolver.version}"/>
+        <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.xerces" version="${org.apache.servicemix.bundles.xerces.version}"/>
+        <dependency groupId="xml-apis" artifactId="xml-apis" version="${xml-apis.version}"/>
+        <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.bcel" version="${org.apache.servicemix.bundles.bcel.version}"/>
+        <dependency groupId="org.apache.bcel" artifactId="bcel" version="${bcel.version}"/>
+        <dependency groupId="jakarta-regexp" artifactId="jakarta-regexp" version="${jakarta-regexp.version}"/>
+        <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.xalan" version="${org.apache.servicemix.bundles.xalan.version}"/>
+        <dependency groupId="xalan" artifactId="serializer" version="${serializer.version}"/>
+        <dependency groupId="xml-apis" artifactId="xml-apis" version="${xml-apis.version}"/>
+        <dependency groupId="org.apache.santuario" artifactId="xmlsec" version="${xmlsec.version}"/>
+        <dependency groupId="commons-logging" artifactId="commons-logging" version="${commons-logging.version}"/>
+        <dependency groupId="org.apache.ws.security" artifactId="wss4j" version="${wss4j.version}"/>
+        <dependency groupId="org.apache.ws.xmlschema" artifactId="xmlschema-core" version="${xmlschema-core.version}"/>
+        <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.wsdl4j" version="${org.apache.servicemix.bundles.wsdl4j.version}"/>
+        <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.xmlresolver" version="${org.apache.servicemix.bundles.xmlresolver.version}"/>
+        <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.fastinfoset" version="${org.apache.servicemix.bundles.fastinfoset.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-api" version="${cxf-api.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-rt-core" version="${cxf-rt-core.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-rt-management" version="${cxf-rt-management.version}"/>
+        <dependency groupId="org.apache.cxf.karaf" artifactId="cxf-karaf-commands" version="${cxf-karaf-commands.version}"/>
+        <dependency groupId="org.apache.neethi" artifactId="neethi" version="${neethi.version}"/>
+        <dependency groupId="org.codehaus.woodstox" artifactId="woodstox-core-asl" version="${woodstox-core-asl.version}"/>
+        <dependency groupId="javax.xml.stream" artifactId="stax-api" version="${stax-api.version}"/>
+        <dependency groupId="org.codehaus.woodstox" artifactId="stax2-api" version="${stax2-api.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-rt-ws-policy" version="${cxf-rt-ws-policy.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-rt-ws-addr" version="${cxf-rt-ws-addr.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-rt-ws-rm" version="${cxf-rt-ws-rm.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-rt-ws-mex" version="${cxf-rt-ws-mex.version}"/>
+        <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.ehcache" version="${org.apache.servicemix.bundles.ehcache.version}"/>
+        <dependency groupId="net.sf.ehcache" artifactId="ehcache-core" version="${ehcache-core.version}"/>
+        <dependency groupId="org.slf4j" artifactId="slf4j-api" version="${slf4j-api.version}"/>
+        <dependency groupId="net.sf.ehcache" artifactId="ehcache-jmsreplication" version="${ehcache-jmsreplication.version}"/>
+        <dependency groupId="net.sf.ehcache" artifactId="ehcache-core" version="${ehcache-core.version}"/>
+        <dependency groupId="net.sf.ehcache" artifactId="ehcache-jmsreplication" version="${ehcache-jmsreplication.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-rt-ws-security" version="${cxf-rt-ws-security.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-rt-transports-http" version="${cxf-rt-transports-http.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-rt-transports-http-jetty" version="${cxf-rt-transports-http-jetty.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-rt-bindings-xml" version="${cxf-rt-bindings-xml.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-rt-bindings-soap" version="${cxf-rt-bindings-soap.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-rt-frontend-simple" version="${cxf-rt-frontend-simple.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-rt-frontend-jaxws" version="${cxf-rt-frontend-jaxws.version}"/>
+        <dependency groupId="org.codehaus.jettison" artifactId="jettison" version="${jettison.version}"/>
+        <dependency groupId="stax" artifactId="stax-api" version="${stax-api.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-rt-bindings-xml" version="${cxf-rt-bindings-xml.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-rt-rs-extension-providers" version="${cxf-rt-rs-extension-providers.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-rt-rs-extension-search" version="${cxf-rt-rs-extension-search.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-rt-frontend-jaxrs" version="${cxf-rt-frontend-jaxrs.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-rt-rs-security-xml" version="${cxf-rt-rs-security-xml.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-rt-rs-security-cors" version="${cxf-rt-rs-security-cors.version}"/>
+        <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.oauth-provider" version="${org.apache.servicemix.bundles.oauth-provider.version}"/>
+        <dependency groupId="net.oauth.core" artifactId="oauth" version="${oauth.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-rt-rs-security-oauth" version="${cxf-rt-rs-security-oauth.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-rt-rs-security-oauth2" version="${cxf-rt-rs-security-oauth2.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-rt-databinding-aegis" version="${cxf-rt-databinding-aegis.version}"/>
+        <dependency groupId="joda-time" artifactId="joda-time" version="${joda-time.version}"/>
+        <dependency groupId="org.joda" artifactId="joda-convert" version="${joda-convert.version}"/>
+        <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.xpp3" version="${org.apache.servicemix.bundles.xpp3.version}"/>
+        <dependency groupId="org.jibx" artifactId="jibx-run" version="${jibx-run.version}"/>
+        <dependency groupId="joda-time" artifactId="joda-time" version="${joda-time.version}"/>
+        <dependency groupId="xpp3" artifactId="xpp3" version="${xpp3.version}"/>
+        <dependency groupId="org.jibx" artifactId="jibx-bind" version="${jibx-bind.version}"/>
+        <dependency groupId="org.jibx" artifactId="jibx-run" version="${jibx-run.version}"/>
+        <dependency groupId="joda-time" artifactId="joda-time" version="${joda-time.version}"/>
+        <dependency groupId="xpp3" artifactId="xpp3" version="${xpp3.version}"/>
+        <dependency groupId="bcel" artifactId="bcel" version="${bcel.version}"/>
+        <dependency groupId="regexp" artifactId="regexp" version="${regexp.version}"/>
+        <dependency groupId="log4j" artifactId="log4j" version="${log4j.version}"/>
+        <dependency groupId="com.thoughtworks.qdox" artifactId="qdox" version="${qdox.version}"/>
+        <dependency groupId="org.jibx" artifactId="jibx-schema" version="${jibx-schema.version}"/>
+        <dependency groupId="org.jibx" artifactId="jibx-bind" version="${jibx-bind.version}"/>
+        <dependency groupId="org.jibx" artifactId="jibx-run" version="${jibx-run.version}"/>
+        <dependency groupId="joda-time" artifactId="joda-time" version="${joda-time.version}"/>
+        <dependency groupId="xpp3" artifactId="xpp3" version="${xpp3.version}"/>
+        <dependency groupId="bcel" artifactId="bcel" version="${bcel.version}"/>
+        <dependency groupId="regexp" artifactId="regexp" version="${regexp.version}"/>
+        <dependency groupId="log4j" artifactId="log4j" version="${log4j.version}"/>
+        <dependency groupId="com.thoughtworks.qdox" artifactId="qdox" version="${qdox.version}"/>
+        <dependency groupId="org.jibx" artifactId="jibx-extras" version="${jibx-extras.version}"/>
+        <dependency groupId="dom4j" artifactId="dom4j" version="${dom4j.version}"/>
+        <dependency groupId="xml-apis" artifactId="xml-apis" version="${xml-apis.version}"/>
+        <dependency groupId="org.jdom" artifactId="jdom" version="${jdom.version}"/>
+        <dependency groupId="org.jibx" artifactId="jibx-tools" version="${jibx-tools.version}"/>
+        <dependency groupId="org.jibx" artifactId="jibx-schema" version="${jibx-schema.version}"/>
+        <dependency groupId="org.jibx" artifactId="jibx-bind" version="${jibx-bind.version}"/>
+        <dependency groupId="org.jibx" artifactId="jibx-run" version="${jibx-run.version}"/>
+        <dependency groupId="joda-time" artifactId="joda-time" version="${joda-time.version}"/>
+        <dependency groupId="xpp3" artifactId="xpp3" version="${xpp3.version}"/>
+        <dependency groupId="bcel" artifactId="bcel" version="${bcel.version}"/>
+        <dependency groupId="regexp" artifactId="regexp" version="${regexp.version}"/>
+        <dependency groupId="log4j" artifactId="log4j" version="${log4j.version}"/>
+        <dependency groupId="com.thoughtworks.qdox" artifactId="qdox" version="${qdox.version}"/>
+        <dependency groupId="org.jibx" artifactId="jibx-extras" version="${jibx-extras.version}"/>
+        <dependency groupId="dom4j" artifactId="dom4j" version="${dom4j.version}"/>
+        <dependency groupId="xml-apis" artifactId="xml-apis" version="${xml-apis.version}"/>
+        <dependency groupId="org.jdom" artifactId="jdom" version="${jdom.version}"/>
+        <dependency groupId="org.jibx.config.3rdparty.org.eclipse" artifactId="org.eclipse.core.contenttype" version="${org.eclipse.core.contenttype.version}"/>
+        <dependency groupId="org.jibx.config.3rdparty.org.eclipse" artifactId="org.eclipse.core.jobs" version="${org.eclipse.core.jobs.version}"/>
+        <dependency groupId="org.jibx.config.3rdparty.org.eclipse" artifactId="org.eclipse.core.resources" version="${org.eclipse.core.resources.version}"/>
+        <dependency groupId="org.jibx.config.3rdparty.org.eclipse" artifactId="org.eclipse.core.runtime" version="${org.eclipse.core.runtime.version}"/>
+        <dependency groupId="org.jibx.config.3rdparty.org.eclipse" artifactId="org.eclipse.equinox.common" version="${org.eclipse.equinox.common.version}"/>
+        <dependency groupId="org.jibx.config.3rdparty.org.eclipse" artifactId="org.eclipse.equinox.preferences" version="${org.eclipse.equinox.preferences.version}"/>
+        <dependency groupId="org.jibx.config.3rdparty.org.eclipse" artifactId="org.eclipse.jdt.core" version="${org.eclipse.jdt.core.version}"/>
+        <dependency groupId="org.jibx.config.3rdparty.org.eclipse" artifactId="org.eclipse.osgi" version="${org.eclipse.osgi.version}"/>
+        <dependency groupId="org.jibx.config.3rdparty.org.eclipse" artifactId="org.eclipse.text" version="${org.eclipse.text.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-rt-databinding-jibx" version="${cxf-rt-databinding-jibx.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-rt-databinding-jaxb" version="${cxf-rt-databinding-jaxb.version}"/>
+        <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.xmlbeans" version="${org.apache.servicemix.bundles.xmlbeans.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-rt-databinding-xmlbeans" version="${cxf-rt-databinding-xmlbeans.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-rt-features-clustering" version="${cxf-rt-features-clustering.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-rt-bindings-corba" version="${cxf-rt-bindings-corba.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-rt-bindings-coloc" version="${cxf-rt-bindings-coloc.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-rt-bindings-object" version="${cxf-rt-bindings-object.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-rt-transports-local" version="${cxf-rt-transports-local.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-rt-transports-jms" version="${cxf-rt-transports-jms.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-rt-javascript" version="${cxf-rt-javascript.version}"/>
+        <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.rhino" version="${org.apache.servicemix.bundles.rhino.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-rt-frontend-js" version="${cxf-rt-frontend-js.version}"/>
+        <dependency groupId="commons-lang" artifactId="commons-lang" version="${commons-lang.version}"/>
+        <dependency groupId="org.apache.cxf.xjc-utils" artifactId="cxf-xjc-runtime" version="${cxf-xjc-runtime.version}"/>
+        <dependency groupId="commons-lang" artifactId="commons-lang" version="${commons-lang.version}"/>
+        <dependency groupId="org.apache.velocity" artifactId="velocity" version="${velocity.version}"/>
+        <dependency groupId="commons-collections" artifactId="commons-collections" version="${commons-collections.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-tools-common" version="${cxf-tools-common.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-tools-java2ws" version="${cxf-tools-java2ws.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-tools-misctools" version="${cxf-tools-misctools.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-tools-validator" version="${cxf-tools-validator.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-tools-wadlto-jaxrs" version="${cxf-tools-wadlto-jaxrs.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-tools-wsdlto-core" version="${cxf-tools-wsdlto-core.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-tools-wsdlto-databinding-jaxb" version="${cxf-tools-wsdlto-databinding-jaxb.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-tools-wsdlto-frontend-javascript" version="${cxf-tools-wsdlto-frontend-javascript.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-tools-wsdlto-frontend-jaxws" version="${cxf-tools-wsdlto-frontend-jaxws.version}"/>
+        <dependency groupId="org.apache.cxf" artifactId="cxf-bundle-compatible" version="${cxf-bundle-compatible.version}"/>
+        <dependency groupId="com.hazelcast" artifactId="hazelcast" version="${hazelcast.version}"/>
+        <dependency groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.ehcache" version="${org.apache.servicemix.bundles.ehcache.version}"/>
+        <dependency groupId="net.sf.ehcache" artifactId="ehcache-core" version="${ehcache-core.version}"/>
+        <dependency groupId="org.slf4j" artifactId="slf4j-api" version="${slf4j-api.version}"/>
+        <dependency groupId="net.sf.ehcache" artifactId="ehcache-jmsreplication" version="${ehcache-jmsreplication.version}"/>
+        <dependency groupId="net.sf.ehcache" artifactId="ehcache-core" version="${ehcache-core.version}"/>
+        <dependency groupId="net.sf.ehcache" artifactId="ehcache-jmsreplication" version="${ehcache-jmsreplication.version}"/>
+        <dependency groupId="org.apache.cxf.services.sts" artifactId="cxf-services-sts-core" version="${cxf-services-sts-core.version}"/>
+        <dependency groupId="org.apache.cxf.services.wsn" artifactId="cxf-services-wsn-api" version="${cxf-services-wsn-api.version}"/>
+        <dependency groupId="org.apache.cxf.services.wsn" artifactId="cxf-services-wsn-core" version="${cxf-services-wsn-core.version}"/>
+      </dependencies>
+    </dependencyManagement>
+    <properties>
+      <geronimo-annotation_1.0_spec.version xsi:type="xsd:AnyType">
+1.1.1      </geronimo-annotation_1.0_spec.version>
+      <geronimo-jta_1.1_spec.version xsi:type="xsd:AnyType">
+1.1.1      </geronimo-jta_1.1_spec.version>
+      <geronimo-jms_1.1_spec.version xsi:type="xsd:AnyType">
+1.1.1      </geronimo-jms_1.1_spec.version>
+      <geronimo-j2ee-management_1.1_spec.version xsi:type="xsd:AnyType">
+1.0.1      </geronimo-j2ee-management_1.1_spec.version>
+      <commons-pool.version xsi:type="xsd:AnyType">
+1.5.4      </commons-pool.version>
+      <commons-lang.version xsi:type="xsd:AnyType">
+2.6      </commons-lang.version>
+      <commons-collections.version xsi:type="xsd:AnyType">
+3.2.1      </commons-collections.version>
+      <commons-codec.version xsi:type="xsd:AnyType">
+1.6      </commons-codec.version>
+      <org.apache.servicemix.bundles.oro.version xsi:type="xsd:AnyType">
+2.0.8_6      </org.apache.servicemix.bundles.oro.version>
+      <velocity.version xsi:type="xsd:AnyType">
+1.7      </velocity.version>
+      <commons-collections.version xsi:type="xsd:AnyType">
+3.2.1      </commons-collections.version>
+      <commons-lang.version xsi:type="xsd:AnyType">
+2.4      </commons-lang.version>
+      <oro.version xsi:type="xsd:AnyType">
+2.0.8      </oro.version>
+      <org.apache.servicemix.bundles.jasypt.version xsi:type="xsd:AnyType">
+1.6_1      </org.apache.servicemix.bundles.jasypt.version>
+      <commons-lang.version xsi:type="xsd:AnyType">
+2.1      </commons-lang.version>
+      <commons-codec.version xsi:type="xsd:AnyType">
+1.1      </commons-codec.version>
+      <activemq-core.version xsi:type="xsd:AnyType">
+5.4.2      </activemq-core.version>
+      <kahadb.version xsi:type="xsd:AnyType">
+5.4.2      </kahadb.version>
+      <activemq-console.version xsi:type="xsd:AnyType">
+5.4.2      </activemq-console.version>
+      <activemq-ra.version xsi:type="xsd:AnyType">
+5.4.2      </activemq-ra.version>
+      <activemq-pool.version xsi:type="xsd:AnyType">
+5.4.2      </activemq-pool.version>
+      <org.apache.aries.transaction.manager.version xsi:type="xsd:AnyType">
+0.2-incubating      </org.apache.aries.transaction.manager.version>
+      <geronimo-osgi-registry.version xsi:type="xsd:AnyType">
+1.1      </geronimo-osgi-registry.version>
+      <org.apache.servicemix.specs.activation-api-1.1.version xsi:type="xsd:AnyType">
+1.9.0      </org.apache.servicemix.specs.activation-api-1.1.version>
+      <geronimo-ws-metadata_2.0_spec.version xsi:type="xsd:AnyType">
+1.1.3      </geronimo-ws-metadata_2.0_spec.version>
+      <org.apache.servicemix.specs.stax-api-1.0.version xsi:type="xsd:AnyType">
+1.9.0      </org.apache.servicemix.specs.stax-api-1.0.version>
+      <org.apache.servicemix.specs.jaxb-api-2.2.version xsi:type="xsd:AnyType">
+1.9.0      </org.apache.servicemix.specs.jaxb-api-2.2.version>
+      <org.apache.servicemix.specs.stax-api-1.0.version xsi:type="xsd:AnyType">
+1.9.0      </org.apache.servicemix.specs.stax-api-1.0.version>
+      <geronimo-activation_1.1_spec.version xsi:type="xsd:AnyType">
+1.0.2      </geronimo-activation_1.1_spec.version>
+      <stax-api.version xsi:type="xsd:AnyType">
+1.0-2      </stax-api.version>
+      <activation.version xsi:type="xsd:AnyType">
+1.1      </activation.version>
+      <org.apache.servicemix.specs.jaxws-api-2.2.version xsi:type="xsd:AnyType">
+1.9.0      </org.apache.servicemix.specs.jaxws-api-2.2.version>
+      <org.apache.servicemix.specs.jaxb-api-2.2.version xsi:type="xsd:AnyType">
+1.9.0      </org.apache.servicemix.specs.jaxb-api-2.2.version>
+      <geronimo-activation_1.1_spec.version xsi:type="xsd:AnyType">
+1.0.2      </geronimo-activation_1.1_spec.version>
+      <stax-api.version xsi:type="xsd:AnyType">
+1.0-2      </stax-api.version>
+      <activation.version xsi:type="xsd:AnyType">
+1.1      </activation.version>
+      <org.apache.servicemix.specs.saaj-api-1.3.version xsi:type="xsd:AnyType">
+1.9.0      </org.apache.servicemix.specs.saaj-api-1.3.version>
+      <org.apache.servicemix.specs.stax-api-1.0.version xsi:type="xsd:AnyType">
+1.9.0      </org.apache.servicemix.specs.stax-api-1.0.version>
+      <org.apache.servicemix.specs.saaj-api-1.3.version xsi:type="xsd:AnyType">
+1.9.0      </org.apache.servicemix.specs.saaj-api-1.3.version>
+      <mail.version xsi:type="xsd:AnyType">
+1.4.4      </mail.version>
+      <org.apache.servicemix.specs.jsr311-api-1.1.1.version xsi:type="xsd:AnyType">
+1.9.0      </org.apache.servicemix.specs.jsr311-api-1.1.1.version>
+      <stax2-api.version xsi:type="xsd:AnyType">
+3.1.1      </stax2-api.version>
+      <woodstox-core-asl.version xsi:type="xsd:AnyType">
+4.1.4      </woodstox-core-asl.version>
+      <org.apache.servicemix.bundles.jaxb-impl.version xsi:type="xsd:AnyType">
+2.2.1.1_2      </org.apache.servicemix.bundles.jaxb-impl.version>
+      <org.apache.servicemix.bundles.jaxb-xjc.version xsi:type="xsd:AnyType">
+2.2.1.1_2      </org.apache.servicemix.bundles.jaxb-xjc.version>
+      <axiom-impl.version xsi:type="xsd:AnyType">
+1.2.10      </axiom-impl.version>
+      <axiom-api.version xsi:type="xsd:AnyType">
+1.2.10      </axiom-api.version>
+      <abdera-core.version xsi:type="xsd:AnyType">
+1.1.2      </abdera-core.version>
+      <abdera-extensions-main.version xsi:type="xsd:AnyType">
+1.1.2      </abdera-extensions-main.version>
+      <abdera-i18n.version xsi:type="xsd:AnyType">
+1.1.2      </abdera-i18n.version>
+      <abdera-parser.version xsi:type="xsd:AnyType">
+1.1.2      </abdera-parser.version>
+      <joda-time.version xsi:type="xsd:AnyType">
+1.6.2      </joda-time.version>
+      <org.apache.servicemix.bundles.opensaml.version xsi:type="xsd:AnyType">
+2.5.1_2      </org.apache.servicemix.bundles.opensaml.version>
+      <commons-collections.version xsi:type="xsd:AnyType">
+3.1      </commons-collections.version>
+      <commons-lang.version xsi:type="xsd:AnyType">
+2.1      </commons-lang.version>
+      <velocity.version xsi:type="xsd:AnyType">
+1.5      </velocity.version>
+      <esapi.version xsi:type="xsd:AnyType">
+2.0GA      </esapi.version>
+      <xml-apis.version xsi:type="xsd:AnyType">
+1.4.01      </xml-apis.version>
+      <xercesImpl.version xsi:type="xsd:AnyType">
+2.10.0      </xercesImpl.version>
+      <xml-resolver.version xsi:type="xsd:AnyType">
+1.2      </xml-resolver.version>
+      <xalan.version xsi:type="xsd:AnyType">
+2.7.1      </xalan.version>
+      <serializer.version xsi:type="xsd:AnyType">
+2.7.1      </serializer.version>
+      <commons-codec.version xsi:type="xsd:AnyType">
+1.3      </commons-codec.version>
+      <commons-httpclient.version xsi:type="xsd:AnyType">
+3.1      </commons-httpclient.version>
+      <slf4j-api.version xsi:type="xsd:AnyType">
+1.6.1      </slf4j-api.version>
+      <jcl-over-slf4j.version xsi:type="xsd:AnyType">
+1.6.1      </jcl-over-slf4j.version>
+      <log4j-over-slf4j.version xsi:type="xsd:AnyType">
+1.6.1      </log4j-over-slf4j.version>
+      <jul-to-slf4j.version xsi:type="xsd:AnyType">
+1.6.1      </jul-to-slf4j.version>
+      <joda-time.version xsi:type="xsd:AnyType">
+1.6.2      </joda-time.version>
+      <bcprov-jdk15.version xsi:type="xsd:AnyType">
+1.45      </bcprov-jdk15.version>
+      <xmlsec.version xsi:type="xsd:AnyType">
+1.4.4      </xmlsec.version>
+      <not-yet-commons-ssl.version xsi:type="xsd:AnyType">
+0.3.9      </not-yet-commons-ssl.version>
+      <jcip-annotations.version xsi:type="xsd:AnyType">
+1.0      </jcip-annotations.version>
+      <org.apache.servicemix.bundles.saaj-impl.version xsi:type="xsd:AnyType">
+1.3.19_1      </org.apache.servicemix.bundles.saaj-impl.version>
+      <mimepull.version xsi:type="xsd:AnyType">
+1.7      </mimepull.version>
+      <org.apache.servicemix.specs.saaj-api-1.3.version xsi:type="xsd:AnyType">
+1.9.0      </org.apache.servicemix.specs.saaj-api-1.3.version>
+      <org.apache.servicemix.bundles.xmlresolver.version xsi:type="xsd:AnyType">
+1.2_5      </org.apache.servicemix.bundles.xmlresolver.version>
+      <org.apache.servicemix.bundles.xerces.version xsi:type="xsd:AnyType">
+2.9.1_5      </org.apache.servicemix.bundles.xerces.version>
+      <xml-apis.version xsi:type="xsd:AnyType">
+1.3.04      </xml-apis.version>
+      <org.apache.servicemix.bundles.bcel.version xsi:type="xsd:AnyType">
+5.2_4      </org.apache.servicemix.bundles.bcel.version>
+      <bcel.version xsi:type="xsd:AnyType">
+5.2      </bcel.version>
+      <jakarta-regexp.version xsi:type="xsd:AnyType">
+1.4      </jakarta-regexp.version>
+      <org.apache.servicemix.bundles.xalan.version xsi:type="xsd:AnyType">
+2.7.1_5      </org.apache.servicemix.bundles.xalan.version>
+      <serializer.version xsi:type="xsd:AnyType">
+2.7.1      </serializer.version>
+      <xml-apis.version xsi:type="xsd:AnyType">
+1.3.04      </xml-apis.version>
+      <xmlsec.version xsi:type="xsd:AnyType">
+1.5.2      </xmlsec.version>
+      <commons-logging.version xsi:type="xsd:AnyType">
+1.1.1      </commons-logging.version>
+      <wss4j.version xsi:type="xsd:AnyType">
+1.6.7      </wss4j.version>
+      <xmlschema-core.version xsi:type="xsd:AnyType">
+2.0.3      </xmlschema-core.version>
+      <org.apache.servicemix.bundles.wsdl4j.version xsi:type="xsd:AnyType">
+1.6.2_6      </org.apache.servicemix.bundles.wsdl4j.version>
+      <org.apache.servicemix.bundles.fastinfoset.version xsi:type="xsd:AnyType">
+1.2.7_4      </org.apache.servicemix.bundles.fastinfoset.version>
+      <cxf-api.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-api.version>
+      <cxf-rt-core.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-rt-core.version>
+      <cxf-rt-management.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-rt-management.version>
+      <cxf-karaf-commands.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-karaf-commands.version>
+      <neethi.version xsi:type="xsd:AnyType">
+3.0.2      </neethi.version>
+      <woodstox-core-asl.version xsi:type="xsd:AnyType">
+4.0.8      </woodstox-core-asl.version>
+      <stax-api.version xsi:type="xsd:AnyType">
+1.0-2      </stax-api.version>
+      <stax2-api.version xsi:type="xsd:AnyType">
+3.0.2      </stax2-api.version>
+      <cxf-rt-ws-policy.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-rt-ws-policy.version>
+      <cxf-rt-ws-addr.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-rt-ws-addr.version>
+      <cxf-rt-ws-rm.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-rt-ws-rm.version>
+      <cxf-rt-ws-mex.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-rt-ws-mex.version>
+      <org.apache.servicemix.bundles.ehcache.version xsi:type="xsd:AnyType">
+2.5.1_1      </org.apache.servicemix.bundles.ehcache.version>
+      <ehcache-core.version xsi:type="xsd:AnyType">
+2.5.1      </ehcache-core.version>
+      <slf4j-api.version xsi:type="xsd:AnyType">
+1.6.1      </slf4j-api.version>
+      <ehcache-jmsreplication.version xsi:type="xsd:AnyType">
+0.4      </ehcache-jmsreplication.version>
+      <ehcache-core.version xsi:type="xsd:AnyType">
+2.5.1      </ehcache-core.version>
+      <ehcache-jmsreplication.version xsi:type="xsd:AnyType">
+0.4      </ehcache-jmsreplication.version>
+      <cxf-rt-ws-security.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-rt-ws-security.version>
+      <cxf-rt-transports-http.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-rt-transports-http.version>
+      <cxf-rt-transports-http-jetty.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-rt-transports-http-jetty.version>
+      <cxf-rt-bindings-xml.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-rt-bindings-xml.version>
+      <cxf-rt-bindings-soap.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-rt-bindings-soap.version>
+      <cxf-rt-frontend-simple.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-rt-frontend-simple.version>
+      <cxf-rt-frontend-jaxws.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-rt-frontend-jaxws.version>
+      <jettison.version xsi:type="xsd:AnyType">
+1.3.2      </jettison.version>
+      <stax-api.version xsi:type="xsd:AnyType">
+1.0.1      </stax-api.version>
+      <cxf-rt-rs-extension-providers.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-rt-rs-extension-providers.version>
+      <cxf-rt-rs-extension-search.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-rt-rs-extension-search.version>
+      <cxf-rt-frontend-jaxrs.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-rt-frontend-jaxrs.version>
+      <cxf-rt-rs-security-xml.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-rt-rs-security-xml.version>
+      <cxf-rt-rs-security-cors.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-rt-rs-security-cors.version>
+      <org.apache.servicemix.bundles.oauth-provider.version xsi:type="xsd:AnyType">
+20100527_1      </org.apache.servicemix.bundles.oauth-provider.version>
+      <oauth.version xsi:type="xsd:AnyType">
+20100527      </oauth.version>
+      <cxf-rt-rs-security-oauth.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-rt-rs-security-oauth.version>
+      <cxf-rt-rs-security-oauth2.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-rt-rs-security-oauth2.version>
+      <cxf-rt-databinding-aegis.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-rt-databinding-aegis.version>
+      <joda-convert.version xsi:type="xsd:AnyType">
+1.2      </joda-convert.version>
+      <org.apache.servicemix.bundles.xpp3.version xsi:type="xsd:AnyType">
+1.1.4c_6      </org.apache.servicemix.bundles.xpp3.version>
+      <jibx-run.version xsi:type="xsd:AnyType">
+1.2.4.5      </jibx-run.version>
+      <joda-time.version xsi:type="xsd:AnyType">
+2.1      </joda-time.version>
+      <xpp3.version xsi:type="xsd:AnyType">
+1.1.3.4.O      </xpp3.version>
+      <jibx-bind.version xsi:type="xsd:AnyType">
+1.2.4.5      </jibx-bind.version>
+      <jibx-run.version xsi:type="xsd:AnyType">
+1.2.4.5      </jibx-run.version>
+      <joda-time.version xsi:type="xsd:AnyType">
+2.1      </joda-time.version>
+      <xpp3.version xsi:type="xsd:AnyType">
+1.1.3.4.O      </xpp3.version>
+      <bcel.version xsi:type="xsd:AnyType">
+5.1      </bcel.version>
+      <regexp.version xsi:type="xsd:AnyType">
+1.2      </regexp.version>
+      <log4j.version xsi:type="xsd:AnyType">
+1.2.16      </log4j.version>
+      <qdox.version xsi:type="xsd:AnyType">
+1.12      </qdox.version>
+      <jibx-schema.version xsi:type="xsd:AnyType">
+1.2.4.5      </jibx-schema.version>
+      <jibx-bind.version xsi:type="xsd:AnyType">
+1.2.4.5      </jibx-bind.version>
+      <jibx-run.version xsi:type="xsd:AnyType">
+1.2.4.5      </jibx-run.version>
+      <joda-time.version xsi:type="xsd:AnyType">
+2.1      </joda-time.version>
+      <xpp3.version xsi:type="xsd:AnyType">
+1.1.3.4.O      </xpp3.version>
+      <bcel.version xsi:type="xsd:AnyType">
+5.1      </bcel.version>
+      <regexp.version xsi:type="xsd:AnyType">
+1.2      </regexp.version>
+      <log4j.version xsi:type="xsd:AnyType">
+1.2.16      </log4j.version>
+      <qdox.version xsi:type="xsd:AnyType">
+1.12      </qdox.version>
+      <jibx-extras.version xsi:type="xsd:AnyType">
+1.2.4.5      </jibx-extras.version>
+      <dom4j.version xsi:type="xsd:AnyType">
+1.6.1      </dom4j.version>
+      <xml-apis.version xsi:type="xsd:AnyType">
+1.0.b2      </xml-apis.version>
+      <jdom.version xsi:type="xsd:AnyType">
+1.1.3      </jdom.version>
+      <jibx-tools.version xsi:type="xsd:AnyType">
+1.2.4.5      </jibx-tools.version>
+      <jibx-schema.version xsi:type="xsd:AnyType">
+1.2.4.5      </jibx-schema.version>
+      <jibx-bind.version xsi:type="xsd:AnyType">
+1.2.4.5      </jibx-bind.version>
+      <jibx-run.version xsi:type="xsd:AnyType">
+1.2.4.5      </jibx-run.version>
+      <joda-time.version xsi:type="xsd:AnyType">
+2.1      </joda-time.version>
+      <xpp3.version xsi:type="xsd:AnyType">
+1.1.3.4.O      </xpp3.version>
+      <bcel.version xsi:type="xsd:AnyType">
+5.1      </bcel.version>
+      <regexp.version xsi:type="xsd:AnyType">
+1.2      </regexp.version>
+      <log4j.version xsi:type="xsd:AnyType">
+1.2.16      </log4j.version>
+      <qdox.version xsi:type="xsd:AnyType">
+1.12      </qdox.version>
+      <jibx-extras.version xsi:type="xsd:AnyType">
+1.2.4.5      </jibx-extras.version>
+      <dom4j.version xsi:type="xsd:AnyType">
+1.6.1      </dom4j.version>
+      <xml-apis.version xsi:type="xsd:AnyType">
+1.0.b2      </xml-apis.version>
+      <jdom.version xsi:type="xsd:AnyType">
+1.1.3      </jdom.version>
+      <org.eclipse.core.contenttype.version xsi:type="xsd:AnyType">
+3.4.100.v20110423-0524      </org.eclipse.core.contenttype.version>
+      <org.eclipse.core.jobs.version xsi:type="xsd:AnyType">
+3.5.100.v20110404      </org.eclipse.core.jobs.version>
+      <org.eclipse.core.resources.version xsi:type="xsd:AnyType">
+3.7.100.v20110510-0712      </org.eclipse.core.resources.version>
+      <org.eclipse.core.runtime.version xsi:type="xsd:AnyType">
+3.7.0.v20110110      </org.eclipse.core.runtime.version>
+      <org.eclipse.equinox.common.version xsi:type="xsd:AnyType">
+3.6.0.v20110523      </org.eclipse.equinox.common.version>
+      <org.eclipse.equinox.preferences.version xsi:type="xsd:AnyType">
+3.4.0.v20110502      </org.eclipse.equinox.preferences.version>
+      <org.eclipse.jdt.core.version xsi:type="xsd:AnyType">
+3.7.0.v_B61      </org.eclipse.jdt.core.version>
+      <org.eclipse.osgi.version xsi:type="xsd:AnyType">
+3.7.0.v20110613      </org.eclipse.osgi.version>
+      <org.eclipse.text.version xsi:type="xsd:AnyType">
+3.5.100.v20110505-0800      </org.eclipse.text.version>
+      <cxf-rt-databinding-jibx.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-rt-databinding-jibx.version>
+      <cxf-rt-databinding-jaxb.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-rt-databinding-jaxb.version>
+      <org.apache.servicemix.bundles.xmlbeans.version xsi:type="xsd:AnyType">
+2.5.0_2      </org.apache.servicemix.bundles.xmlbeans.version>
+      <cxf-rt-databinding-xmlbeans.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-rt-databinding-xmlbeans.version>
+      <cxf-rt-features-clustering.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-rt-features-clustering.version>
+      <cxf-rt-bindings-corba.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-rt-bindings-corba.version>
+      <cxf-rt-bindings-coloc.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-rt-bindings-coloc.version>
+      <cxf-rt-bindings-object.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-rt-bindings-object.version>
+      <cxf-rt-transports-local.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-rt-transports-local.version>
+      <cxf-rt-transports-jms.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-rt-transports-jms.version>
+      <cxf-rt-javascript.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-rt-javascript.version>
+      <org.apache.servicemix.bundles.rhino.version xsi:type="xsd:AnyType">
+1.7R2_3      </org.apache.servicemix.bundles.rhino.version>
+      <cxf-rt-frontend-js.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-rt-frontend-js.version>
+      <cxf-xjc-runtime.version xsi:type="xsd:AnyType">
+2.6.0      </cxf-xjc-runtime.version>
+      <cxf-tools-common.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-tools-common.version>
+      <cxf-tools-java2ws.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-tools-java2ws.version>
+      <cxf-tools-misctools.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-tools-misctools.version>
+      <cxf-tools-validator.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-tools-validator.version>
+      <cxf-tools-wadlto-jaxrs.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-tools-wadlto-jaxrs.version>
+      <cxf-tools-wsdlto-core.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-tools-wsdlto-core.version>
+      <cxf-tools-wsdlto-databinding-jaxb.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-tools-wsdlto-databinding-jaxb.version>
+      <cxf-tools-wsdlto-frontend-javascript.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-tools-wsdlto-frontend-javascript.version>
+      <cxf-tools-wsdlto-frontend-jaxws.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-tools-wsdlto-frontend-jaxws.version>
+      <cxf-bundle-compatible.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-bundle-compatible.version>
+      <hazelcast.version xsi:type="xsd:AnyType">
+1.9.4      </hazelcast.version>
+      <ehcache-core.version xsi:type="xsd:AnyType">
+2.5.1      </ehcache-core.version>
+      <slf4j-api.version xsi:type="xsd:AnyType">
+1.6.1      </slf4j-api.version>
+      <ehcache-jmsreplication.version xsi:type="xsd:AnyType">
+0.4      </ehcache-jmsreplication.version>
+      <ehcache-core.version xsi:type="xsd:AnyType">
+2.5.1      </ehcache-core.version>
+      <ehcache-jmsreplication.version xsi:type="xsd:AnyType">
+0.4      </ehcache-jmsreplication.version>
+      <cxf-services-sts-core.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-services-sts-core.version>
+      <cxf-services-wsn-api.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-services-wsn-api.version>
+      <cxf-services-wsn-core.version xsi:type="xsd:AnyType">
+2.6.3      </cxf-services-wsn-core.version>
+    </properties>
+  </project>
+</_0:DocumentRoot>

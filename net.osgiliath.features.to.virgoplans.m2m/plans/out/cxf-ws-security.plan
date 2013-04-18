@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<plan:Plan xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:plan="http://www.eclipse.org/virgo/schema/plan" atomic="true" name="cxf-ws-security" scoped="false" version="2.6.3">
+  <artifact name="slf4j.api" type="bundle" version="1.6.1"/>
+  <artifact name="org.apache.servicemix.bundles.ehcache" type="bundle" version="2.5.1.1"/>
+  <artifact name="org.apache.cxf.cxf-rt-ws-security" type="bundle" version="2.6.3"/>
+  <artifact name="cxf-ws-policy" type="plan" version="2.6.3"/>
+  <artifact name="wss4j" type="plan" version="1.6.7"/>
+  <artifact name="cxf-ws-addr" type="plan" version="2.6.3"/>
+</plan:Plan>

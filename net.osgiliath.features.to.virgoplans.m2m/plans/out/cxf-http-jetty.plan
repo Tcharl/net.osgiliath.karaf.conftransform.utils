@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<plan:Plan xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:plan="http://www.eclipse.org/virgo/schema/plan" atomic="true" name="cxf-http-jetty" scoped="false" version="2.6.3">
+  <artifact name="org.apache.cxf.cxf-rt-transports-http-jetty" type="bundle" version="2.6.3"/>
+  <artifact name="cxf-http" type="plan" version="[2,3)"/>
+  <artifact name="jetty" type="plan" version="[7,8)"/>
+</plan:Plan>

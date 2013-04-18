@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<plan:Plan xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:plan="http://www.eclipse.org/virgo/schema/plan" atomic="true" name="cxf-frontend-javascript" scoped="false" version="2.6.3">
+  <artifact name="org.apache.servicemix.bundles.rhino" type="bundle" version="1.0.0.7R2_3"/>
+  <artifact name="org.apache.cxf.cxf-rt-frontend-js" type="bundle" version="2.6.3"/>
+  <artifact name="cxf-core" type="plan" version="2.6.3"/>
+  <artifact name="cxf-jaxws" type="plan" version="2.6.3"/>
+</plan:Plan>

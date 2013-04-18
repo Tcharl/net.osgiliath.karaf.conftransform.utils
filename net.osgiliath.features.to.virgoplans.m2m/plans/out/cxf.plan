@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ASCII"?>
+<plan:Plan xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:plan="http://www.eclipse.org/virgo/schema/plan" atomic="true" name="cxf" scoped="false" version="2.6.3">
+  <artifact name="org.apache.cxf.bundle" type="bundle" version="2.6.3"/>
+  <artifact name="spring" type="plan" version="[3,4)"/>
+  <artifact name="spring-dm" type="plan" version="[1.2,2)"/>
+  <artifact name="cxf-core" type="plan" version="2.6.3"/>
+  <artifact name="cxf-jaxws" type="plan" version="2.6.3"/>
+  <artifact name="cxf-jaxrs" type="plan" version="2.6.3"/>
+  <artifact name="cxf-databinding-jaxb" type="plan" version="2.6.3"/>
+  <artifact name="cxf-databinding-aegis" type="plan" version="2.6.3"/>
+  <artifact name="cxf-databinding-xmlbeans" type="plan" version="2.6.3"/>
+  <artifact name="cxf-bindings-corba" type="plan" version="2.6.3"/>
+  <artifact name="cxf-bindings-coloc" type="plan" version="2.6.3"/>
+  <artifact name="cxf-bindings-object" type="plan" version="2.6.3"/>
+  <artifact name="cxf-http-jetty" type="plan" version="2.6.3"/>
+  <artifact name="cxf-transports-local" type="plan" version="2.6.3"/>
+  <artifact name="cxf-transports-jms" type="plan" version="2.6.3"/>
+  <artifact name="cxf-xjc-runtime" type="plan" version="2.6.3"/>
+  <artifact name="cxf-ws-security" type="plan" version="2.6.3"/>
+  <artifact name="cxf-ws-rm" type="plan" version="2.6.3"/>
+  <artifact name="cxf-ws-mex" type="plan" version="2.6.3"/>
+  <artifact name="cxf-javascript" type="plan" version="2.6.3"/>
+  <artifact name="cxf-frontend-javascript" type="plan" version="2.6.3"/>
+  <artifact name="cxf-features-clustering" type="plan" version="2.6.3"/>
+</plan:Plan>

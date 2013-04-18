@@ -1,0 +1,37 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1349471266361
+Build-Jdk: 1.5.0_22
+Built-By: dkulp
+Bundle-Description: Apache CXF WSN Core Service
+Bundle-DocURL: http://www.apache.org/
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache CXF WSN Core
+Bundle-SymbolicName: org.apache.cxf.services.wsn.cxf-services-wsn-core
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 2.6.3
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.cxf.wsn.services;version="2.6.3"
+Export-Service: org.oasis_open.docs.wsn.brw_2.NotificationBroker;address
+ ="${cxf.wsn.rootUrl}${cxf.wsn.context}/NotificationBroker",org.oasis_op
+ en.docs.wsn.bw_2.CreatePullPoint;address="${cxf.wsn.rootUrl}${cxf.wsn.c
+ ontext}/CreatePullPoint"
+Ignore-Package: org.apache.activemq.advisory,org.apache.activemq.command
+ ,org.apache.activemq
+Import-Package: javax.jms;version="[1.1,2)",javax.jws;version="[0.0,3)",
+ javax.management,javax.xml.bind;version="[0.0,3)",javax.xml.datatype,ja
+ vax.xml.namespace,javax.xml.parsers,javax.xml.ws;version="[0.0,3)",java
+ x.xml.ws.spi;version="[0.0,3)",javax.xml.ws.wsaddressing;version="[0.0,
+ 3)",javax.xml.xpath,org.apache.cxf;version="2.6.3",org.apache.cxf.bus.b
+ lueprint;version="2.6.3",org.apache.cxf.common.logging;version="2.6.3",
+ org.apache.cxf.wsn.util;version="2.6.3",org.oasis_open.docs.wsn.b_2;ver
+ sion="[1.3,2)",org.oasis_open.docs.wsn.br_2;version="[1.3,2)",org.oasis
+ _open.docs.wsn.brw_2;version="[1.3,2)",org.oasis_open.docs.wsn.bw_2;ver
+ sion="[1.3,2)",org.oasis_open.docs.wsrf.rp_2;version="[1.2,2)",org.oasi
+ s_open.docs.wsrf.rpw_2;version="[1.2,2)",org.oasis_open.docs.wsrf.rw_2;
+ version="[1.2,2)",org.osgi.framework;version="[1.5,2)",org.osgi.service
+ .blueprint;version="[1.0.0,2.0.0)",org.osgi.service.blueprint.container
+ ;version="[1.0,2)",org.w3c.dom
+Require-Bundle: org.apache.activemq.activemq-core,org.apache.cxf.service
+ s.wsn.cxf-services-wsn-api
+Tool: Bnd-1.50.0

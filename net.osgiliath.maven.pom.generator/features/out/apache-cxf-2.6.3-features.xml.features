@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="ASCII"?>
+<_0:DocumentRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_0="http://karaf.apache.org/xmlns/features/v1.0.0">
+  <features>
+    <feature name="activemq" version="5.4.2">
+      <bundle value="mvn:org.apache.geronimo.specs/geronimo-annotation_1.0_spec/1.1.1" dependency="true" startLevel="10"/>
+      <bundle value="mvn:org.apache.geronimo.specs/geronimo-jta_1.1_spec/1.1.1" dependency="true" startLevel="10"/>
+      <bundle value="mvn:org.apache.geronimo.specs/geronimo-jms_1.1_spec/1.1.1" dependency="true" startLevel="10"/>
+      <bundle value="mvn:org.apache.geronimo.specs/geronimo-j2ee-management_1.1_spec/1.0.1" dependency="true" startLevel="10"/>
+      <bundle value="mvn:commons-pool/commons-pool/1.5.4" dependency="true" startLevel="50"/>
+      <bundle value="mvn:commons-lang/commons-lang/2.6" dependency="true" startLevel="50"/>
+      <bundle value="mvn:commons-collections/commons-collections/3.2.1" dependency="true" startLevel="50"/>
+      <bundle value="mvn:commons-codec/commons-codec/1.6" dependency="true" startLevel="50"/>
+      <bundle value="mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.oro/2.0.8_6" dependency="true" startLevel="50"/>
+      <bundle value="mvn:org.apache.velocity/velocity/1.7" dependency="true" startLevel="50"/>
+      <bundle value="mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.jasypt/1.6_1" dependency="true" startLevel="50"/>
+      <bundle value="mvn:org.apache.activemq/activemq-core/5.4.2" startLevel="50"/>
+      <bundle value="mvn:org.apache.activemq/kahadb/5.4.2" startLevel="50"/>
+      <bundle value="mvn:org.apache.activemq/activemq-console/5.4.2" startLevel="50"/>
+      <bundle value="mvn:org.apache.activemq/activemq-ra/5.4.2" startLevel="50"/>
+      <bundle value="mvn:org.apache.activemq/activemq-pool/5.4.2" startLevel="50"/>
+      <bundle value="mvn:org.apache.aries.transaction/org.apache.aries.transaction.manager/0.2-incubating" startLevel="50"/>
+    </feature>
+    <feature name="cxf-specs" version="2.6.3">
+      <bundle value="mvn:org.apache.geronimo.specs/geronimo-osgi-registry/1.1" startLevel="9"/>
+      <bundle value="mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.activation-api-1.1/1.9.0" dependency="true" startLevel="10"/>
+      <bundle value="mvn:org.apache.geronimo.specs/geronimo-annotation_1.0_spec/1.1.1" startLevel="10"/>
+      <bundle value="mvn:org.apache.geronimo.specs/geronimo-ws-metadata_2.0_spec/1.1.3" startLevel="10"/>
+      <bundle value="mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.stax-api-1.0/1.9.0" startLevel="10"/>
+      <bundle value="mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.jaxb-api-2.2/1.9.0" dependency="true" startLevel="10"/>
+      <bundle value="mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.jaxws-api-2.2/1.9.0" dependency="true" startLevel="10"/>
+      <bundle value="mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.saaj-api-1.3/1.9.0" dependency="true" startLevel="10"/>
+      <bundle value="mvn:javax.mail/mail/1.4.4" startLevel="10"/>
+      <bundle value="mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.jsr311-api-1.1.1/1.9.0" startLevel="10"/>
+      <bundle value="mvn:org.codehaus.woodstox/stax2-api/3.1.1" startLevel="20"/>
+      <bundle value="mvn:org.codehaus.woodstox/woodstox-core-asl/4.1.4" startLevel="20"/>
+      <bundle value="mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.jaxb-impl/2.2.1.1_2" startLevel="20"/>
+      <bundle value="mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.jaxb-xjc/2.2.1.1_2" startLevel="20"/>
+    </feature>
+    <feature name="cxf-jaxb" version="2.6.3">
+      <feature value="cxf-specs" version="2.6.3"/>
+      <bundle value="mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.jaxb-impl/2.2.1.1_2" startLevel="20"/>
+      <bundle value="mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.jaxb-xjc/2.2.1.1_2" startLevel="20"/>
+    </feature>
+    <feature name="cxf-abdera" version="2.6.3">
+      <feature value="cxf-specs" version="2.6.3"/>
+      <bundle value="mvn:commons-codec/commons-codec/1.6" dependency="true" startLevel="35"/>
+      <bundle value="mvn:org.apache.ws.commons.axiom/axiom-impl/1.2.10" startLevel="35"/>
+      <bundle value="mvn:org.apache.ws.commons.axiom/axiom-api/1.2.10" startLevel="35"/>
+      <bundle value="mvn:org.apache.abdera/abdera-core/1.1.2" startLevel="35"/>
+      <bundle value="mvn:org.apache.abdera/abdera-extensions-main/1.1.2" startLevel="35"/>
+      <bundle value="mvn:org.apache.abdera/abdera-i18n/1.1.2" startLevel="35"/>
+      <bundle value="mvn:org.apache.abdera/abdera-parser/1.1.2" startLevel="35"/>
+    </feature>
+    <feature name="wss4j" version="1.6.7">
+      <feature value="cxf-specs" version="2.6.3"/>
+      <bundle value="mvn:joda-time/joda-time/1.6.2" dependency="true" startLevel="25"/>
+      <bundle value="mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.opensaml/2.5.1_2" dependency="true" startLevel="25"/>
+      <bundle value="mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.saaj-impl/1.3.19_1" dependency="true" startLevel="25"/>
+      <bundle value="mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.xmlresolver/1.2_5" startLevel="25"/>
+      <bundle value="mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.xerces/2.9.1_5" dependency="true" startLevel="30"/>
+      <bundle value="mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.bcel/5.2_4" dependency="true" startLevel="30"/>
+      <bundle value="mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.xalan/2.7.1_5" dependency="true" startLevel="30"/>
+      <bundle value="mvn:org.apache.santuario/xmlsec/1.5.2" dependency="true" startLevel="30"/>
+      <bundle value="mvn:org.apache.ws.security/wss4j/1.6.7" startLevel="30"/>
+    </feature>
+    <feature name="cxf-core" version="2.6.3">
+      <feature value="cxf-specs" version="2.6.3"/>
+      <bundle value="mvn:org.apache.ws.xmlschema/xmlschema-core/2.0.3" dependency="true" startLevel="30"/>
+      <bundle value="mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.wsdl4j/1.6.2_6" dependency="true" startLevel="30"/>
+      <bundle value="mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.xmlresolver/1.2_5" dependency="true" startLevel="30"/>
+      <bundle value="mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.fastinfoset/1.2.7_4" dependency="true" startLevel="30"/>
+      <bundle value="mvn:org.apache.cxf/cxf-api/2.6.3" startLevel="40"/>
+      <bundle value="mvn:org.apache.cxf/cxf-rt-core/2.6.3" startLevel="40"/>
+      <bundle value="mvn:org.apache.cxf/cxf-rt-management/2.6.3" startLevel="40"/>
+      <bundle value="mvn:org.apache.cxf.karaf/cxf-karaf-commands/2.6.3" startLevel="40"/>
+    </feature>
+    <feature name="cxf-ws-policy" version="2.6.3">
+      <feature value="cxf-core" version="2.6.3"/>
+      <bundle value="mvn:org.apache.neethi/neethi/3.0.2" dependency="true" startLevel="30"/>
+      <bundle value="mvn:org.apache.cxf/cxf-rt-ws-policy/2.6.3" startLevel="40"/>
+    </feature>
+    <feature name="cxf-ws-addr" version="2.6.3">
+      <feature value="cxf-ws-policy" version="2.6.3"/>
+      <feature value="cxf-bindings-soap" version="2.6.3"/>
+      <bundle value="mvn:org.apache.cxf/cxf-rt-ws-addr/2.6.3" startLevel="40"/>
+    </feature>
+    <feature name="cxf-ws-rm" version="2.6.3">
+      <feature value="cxf-ws-policy" version="2.6.3"/>
+      <feature value="cxf-ws-addr" version="2.6.3"/>
+      <feature value="cxf-databinding-jaxb" version="2.6.3"/>
+      <bundle value="mvn:org.apache.cxf/cxf-rt-ws-rm/2.6.3" startLevel="40"/>
+    </feature>
+    <feature name="cxf-ws-mex" version="2.6.3">
+      <feature value="cxf-ws-policy" version="2.6.3"/>
+      <feature value="cxf-ws-addr" version="2.6.3"/>
+      <feature value="cxf-jaxws" version="2.6.3"/>
+      <bundle value="mvn:org.apache.cxf/cxf-rt-ws-mex/2.6.3" startLevel="40"/>
+    </feature>
+    <feature name="cxf-ws-security" version="2.6.3">
+      <feature value="cxf-ws-policy" version="2.6.3"/>
+      <feature value="wss4j" version="1.6.7"/>
+      <feature value="cxf-ws-addr" version="2.6.3"/>
+      <bundle value="mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.ehcache/2.5.1_1" dependency="true" startLevel="40"/>
+      <bundle value="mvn:org.apache.cxf/cxf-rt-ws-security/2.6.3" startLevel="40"/>
+    </feature>
+    <feature name="cxf-http" version="2.6.3">
+      <feature value="cxf-core" version="2.6.3"/>
+      <feature value="http-whiteboard" version="[2,4)"/>
+      <bundle value="mvn:org.apache.cxf/cxf-rt-transports-http/2.6.3" startLevel="40"/>
+    </feature>
+    <feature name="cxf-http-jetty" version="2.6.3">
+      <feature value="cxf-http" version="[2,3)"/>
+      <feature value="jetty" version="[7,8)"/>
+      <bundle value="mvn:org.apache.cxf/cxf-rt-transports-http-jetty/2.6.3" startLevel="40"/>
+    </feature>
+    <feature name="cxf-bindings-soap" version="2.6.3">
+      <feature value="cxf-core" version="2.6.3"/>
+      <bundle value="mvn:org.apache.cxf/cxf-rt-bindings-xml/2.6.3" startLevel="40"/>
+      <bundle value="mvn:org.apache.cxf/cxf-rt-bindings-soap/2.6.3" startLevel="40"/>
+    </feature>
+    <feature name="cxf-jaxws" version="2.6.3">
+      <feature value="cxf-core" version="2.6.3"/>
+      <feature value="cxf-databinding-jaxb" version="2.6.3"/>
+      <feature value="cxf-bindings-soap" version="2.6.3"/>
+      <feature value="cxf-http" version="2.6.3"/>
+      <bundle value="mvn:org.apache.cxf/cxf-rt-frontend-simple/2.6.3" startLevel="40"/>
+      <bundle value="mvn:org.apache.cxf/cxf-rt-frontend-jaxws/2.6.3" startLevel="40"/>
+    </feature>
+    <feature name="cxf-jaxrs" version="2.6.3">
+      <feature value="cxf-core" version="2.6.3"/>
+      <feature value="cxf-http" version="2.6.3"/>
+      <bundle value="mvn:org.codehaus.jettison/jettison/1.3.2" dependency="true" startLevel="30"/>
+      <bundle value="mvn:org.apache.cxf/cxf-rt-bindings-xml/2.6.3" startLevel="40"/>
+      <bundle value="mvn:org.apache.cxf/cxf-rt-rs-extension-providers/2.6.3" startLevel="40"/>
+      <bundle value="mvn:org.apache.cxf/cxf-rt-rs-extension-search/2.6.3" startLevel="40"/>
+      <bundle value="mvn:org.apache.cxf/cxf-rt-frontend-jaxrs/2.6.3" startLevel="40"/>
+    </feature>
+    <feature name="cxf-rs-security-xml" version="2.6.3">
+      <feature value="cxf-jaxrs" version="2.6.3"/>
+      <feature value="wss4j" version="1.6.7"/>
+      <bundle value="mvn:org.apache.cxf/cxf-rt-rs-security-xml/2.6.3" startLevel="40"/>
+    </feature>
+    <feature name="cxf-rs-security-cors" version="2.6.3">
+      <feature value="cxf-jaxrs" version="2.6.3"/>
+      <bundle value="mvn:org.apache.cxf/cxf-rt-rs-security-cors/2.6.3" startLevel="40"/>
+    </feature>
+    <feature name="cxf-rs-security-oauth" version="2.6.3">
+      <feature value="cxf-jaxrs" version="2.6.3"/>
+      <bundle value="mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.oauth-provider/20100527_1" dependency="true" startLevel="30"/>
+      <bundle value="mvn:org.apache.cxf/cxf-rt-rs-security-oauth/2.6.3" startLevel="40"/>
+    </feature>
+    <feature name="cxf-rs-security-oauth2" version="2.6.3">
+      <feature value="cxf-jaxrs" version="2.6.3"/>
+      <bundle value="mvn:org.apache.cxf/cxf-rt-rs-security-oauth2/2.6.3" startLevel="40"/>
+    </feature>
+    <feature name="cxf-databinding-aegis" version="2.6.3">
+      <feature value="cxf-core" version="2.6.3"/>
+      <feature value="cxf-bindings-soap" version="2.6.3"/>
+      <bundle value="mvn:org.apache.cxf/cxf-rt-databinding-aegis/2.6.3" startLevel="40"/>
+    </feature>
+    <feature name="cxf-databinding-jibx" version="2.6.3">
+      <feature value="cxf-core" version="2.6.3"/>
+      <feature value="cxf-tools" version="2.6.3"/>
+      <bundle value="mvn:joda-time/joda-time/2.1" dependency="true" startLevel="25"/>
+      <bundle value="mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.xpp3/1.1.4c_6" dependency="true" startLevel="40"/>
+      <bundle value="mvn:org.jibx/jibx-run/1.2.4.5" dependency="true" startLevel="40"/>
+      <bundle value="mvn:org.jibx/jibx-bind/1.2.4.5" dependency="true" startLevel="40"/>
+      <bundle value="mvn:org.jibx/jibx-schema/1.2.4.5" dependency="true" startLevel="40"/>
+      <bundle value="mvn:org.jibx/jibx-tools/1.2.4.5" dependency="true" startLevel="40"/>
+      <bundle value="mvn:org.apache.cxf/cxf-rt-databinding-jibx/2.6.3" startLevel="40"/>
+    </feature>
+    <feature name="cxf-databinding-jaxb" version="2.6.3">
+      <feature value="cxf-core" version="2.6.3"/>
+      <bundle value="mvn:org.apache.cxf/cxf-rt-databinding-jaxb/2.6.3" startLevel="40"/>
+    </feature>
+    <feature name="cxf-databinding-xmlbeans" version="2.6.3">
+      <feature value="cxf-core" version="2.6.3"/>
+      <bundle value="mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.xmlbeans/2.5.0_2" dependency="true" startLevel="30"/>
+      <bundle value="mvn:org.apache.cxf/cxf-rt-databinding-xmlbeans/2.6.3" startLevel="40"/>
+    </feature>
+    <feature name="cxf-features-clustering" version="2.6.3">
+      <feature value="cxf-core" version="2.6.3"/>
+      <bundle value="mvn:org.apache.cxf/cxf-rt-features-clustering/2.6.3" startLevel="40"/>
+    </feature>
+    <feature name="cxf-bindings-corba" version="2.6.3">
+      <feature value="cxf-core" version="2.6.3"/>
+      <bundle value="mvn:org.apache.cxf/cxf-rt-bindings-corba/2.6.3" startLevel="40"/>
+    </feature>
+    <feature name="cxf-bindings-coloc" version="2.6.3">
+      <feature value="cxf-core" version="2.6.3"/>
+      <feature value="spring" version="[3,4)"/>
+      <bundle value="mvn:org.apache.cxf/cxf-rt-bindings-coloc/2.6.3" startLevel="40"/>
+    </feature>
+    <feature name="cxf-bindings-object" version="2.6.3">
+      <feature value="cxf-core" version="2.6.3"/>
+      <feature value="cxf-transports-local" version="2.6.3"/>
+      <feature value="spring" version="[3,4)"/>
+      <bundle value="mvn:org.apache.cxf/cxf-rt-bindings-object/2.6.3" startLevel="40"/>
+    </feature>
+    <feature name="cxf-transports-local" version="2.6.3">
+      <feature value="cxf-core" version="2.6.3"/>
+      <bundle value="mvn:org.apache.cxf/cxf-rt-transports-local/2.6.3" startLevel="40"/>
+    </feature>
+    <feature name="cxf-transports-jms" version="2.6.3">
+      <feature value="cxf-core" version="2.6.3"/>
+      <feature value="spring" version="[3,4)"/>
+      <feature value="spring-jms" version="[3,4)"/>
+      <feature value="cxf-bindings-soap" version="2.6.3"/>
+      <bundle value="mvn:org.apache.cxf/cxf-rt-transports-jms/2.6.3" startLevel="40"/>
+    </feature>
+    <feature name="cxf-javascript" version="2.6.3">
+      <feature value="cxf-core" version="2.6.3"/>
+      <feature value="cxf-bindings-soap" version="2.6.3"/>
+      <bundle value="mvn:org.apache.cxf/cxf-rt-javascript/2.6.3" startLevel="40"/>
+    </feature>
+    <feature name="cxf-frontend-javascript" version="2.6.3">
+      <feature value="cxf-core" version="2.6.3"/>
+      <feature value="cxf-jaxws" version="2.6.3"/>
+      <bundle value="mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.rhino/1.7R2_3" dependency="true" startLevel="40"/>
+      <bundle value="mvn:org.apache.cxf/cxf-rt-frontend-js/2.6.3" startLevel="40"/>
+    </feature>
+    <feature name="cxf-xjc-runtime" version="2.6.3">
+      <feature value="cxf-jaxb" version="2.6.3"/>
+      <bundle value="mvn:commons-lang/commons-lang/2.6" dependency="true" startLevel="40"/>
+      <bundle value="mvn:org.apache.cxf.xjc-utils/cxf-xjc-runtime/2.6.0" startLevel="40"/>
+    </feature>
+    <feature name="cxf-tools" version="2.6.3">
+      <feature value="cxf-core" version="2.6.3"/>
+      <feature value="cxf-databinding-jaxb" version="2.6.3"/>
+      <feature value="cxf-databinding-aegis" version="2.6.3"/>
+      <feature value="cxf-bindings-soap" version="2.6.3"/>
+      <feature value="cxf-jaxrs" version="2.6.3"/>
+      <feature value="cxf-jaxws" version="2.6.3"/>
+      <feature value="cxf-javascript" version="2.6.3"/>
+      <bundle value="mvn:commons-lang/commons-lang/2.6"/>
+      <bundle value="mvn:org.apache.velocity/velocity/1.7"/>
+      <bundle value="mvn:commons-collections/commons-collections/3.2.1"/>
+      <bundle value="mvn:org.apache.cxf/cxf-tools-common/2.6.3"/>
+      <bundle value="mvn:org.apache.cxf/cxf-tools-java2ws/2.6.3"/>
+      <bundle value="mvn:org.apache.cxf/cxf-tools-misctools/2.6.3"/>
+      <bundle value="mvn:org.apache.cxf/cxf-tools-validator/2.6.3"/>
+      <bundle value="mvn:org.apache.cxf/cxf-tools-wadlto-jaxrs/2.6.3"/>
+      <bundle value="mvn:org.apache.cxf/cxf-tools-wsdlto-core/2.6.3"/>
+      <bundle value="mvn:org.apache.cxf/cxf-tools-wsdlto-databinding-jaxb/2.6.3"/>
+      <bundle value="mvn:org.apache.cxf/cxf-tools-wsdlto-frontend-javascript/2.6.3"/>
+      <bundle value="mvn:org.apache.cxf/cxf-tools-wsdlto-frontend-jaxws/2.6.3"/>
+    </feature>
+    <feature name="cxf" version="2.6.3">
+      <feature value="spring" version="[3,4)"/>
+      <feature value="spring-dm" version="[1.2,2)"/>
+      <feature value="cxf-core" version="2.6.3"/>
+      <feature value="cxf-jaxws" version="2.6.3"/>
+      <feature value="cxf-jaxrs" version="2.6.3"/>
+      <feature value="cxf-databinding-jaxb" version="2.6.3"/>
+      <feature value="cxf-databinding-aegis" version="2.6.3"/>
+      <feature value="cxf-databinding-xmlbeans" version="2.6.3"/>
+      <feature value="cxf-bindings-corba" version="2.6.3"/>
+      <feature value="cxf-bindings-coloc" version="2.6.3"/>
+      <feature value="cxf-bindings-object" version="2.6.3"/>
+      <feature value="cxf-http-jetty" version="2.6.3"/>
+      <feature value="cxf-transports-local" version="2.6.3"/>
+      <feature value="cxf-transports-jms" version="2.6.3"/>
+      <feature value="cxf-xjc-runtime" version="2.6.3"/>
+      <feature value="cxf-ws-security" version="2.6.3"/>
+      <feature value="cxf-ws-rm" version="2.6.3"/>
+      <feature value="cxf-ws-mex" version="2.6.3"/>
+      <feature value="cxf-javascript" version="2.6.3"/>
+      <feature value="cxf-frontend-javascript" version="2.6.3"/>
+      <feature value="cxf-features-clustering" version="2.6.3"/>
+      <bundle value="mvn:org.apache.cxf/cxf-bundle-compatible/2.6.3" startLevel="50"/>
+    </feature>
+    <feature name="cxf-sts" version="2.6.3">
+      <bundle value="mvn:com.hazelcast/hazelcast/1.9.4" dependency="true" startLevel="40"/>
+      <bundle value="mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.ehcache/2.5.1_1" dependency="true" startLevel="40"/>
+      <feature value="cxf-core" version="2.6.3"/>
+      <feature value="cxf-ws-security" version="2.6.3"/>
+      <bundle value="mvn:org.apache.cxf.services.sts/cxf-services-sts-core/2.6.3"/>
+    </feature>
+    <feature name="cxf-wsn-api" version="2.6.3">
+      <feature value="cxf-ws-addr" version="2.6.3"/>
+      <feature value="cxf-jaxws" version="2.6.3"/>
+      <bundle value="mvn:org.apache.cxf.services.wsn/cxf-services-wsn-api/2.6.3"/>
+    </feature>
+    <feature name="cxf-wsn" version="2.6.3">
+      <feature value="activemq" version="[5.4,6)"/>
+      <feature value="cxf-wsn-api" version="2.6.3"/>
+      <feature value="cxf-http-jetty" version="2.6.3"/>
+      <bundle value="mvn:org.apache.cxf.services.wsn/cxf-services-wsn-core/2.6.3"/>
+    </feature>
+  </features>
+</_0:DocumentRoot>

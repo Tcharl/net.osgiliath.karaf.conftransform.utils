@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<plan:Plan xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:plan="http://www.eclipse.org/virgo/schema/plan" atomic="true" name="wss4j" scoped="false" version="1.6.7">
+  <artifact name="joda-time" type="bundle" version="1.6.2"/>
+  <artifact name="slf4j.api" type="bundle" version="1.6.1"/>
+  <artifact name="jcl.over.slf4j" type="bundle" version="1.6.1"/>
+  <artifact name="log4j.over.slf4j" type="bundle" version="1.6.1"/>
+  <artifact name="joda-time" type="bundle" version="1.6.2"/>
+  <artifact name="org.apache.servicemix.bundles.opensaml" type="bundle" version="2.5.1.2"/>
+  <artifact name="org.jvnet.mimepull" type="bundle" version="1.7"/>
+  <artifact name="org.apache.servicemix.specs.saaj-api-1.3" type="bundle" version="1.9.0"/>
+  <artifact name="org.apache.servicemix.bundles.saaj-impl" type="bundle" version="1.3.19.1"/>
+  <artifact name="org.apache.servicemix.bundles.xmlresolver" type="bundle" version="1.2.0.5"/>
+  <artifact name="org.apache.servicemix.bundles.xerces" type="bundle" version="2.9.1.5"/>
+  <artifact name="org.apache.servicemix.bundles.bcel" type="bundle" version="5.2.0.4"/>
+  <artifact name="org.apache.servicemix.bundles.xalan" type="bundle" version="2.7.1.5"/>
+  <artifact name="org.apache.santuario.xmlsec" type="bundle" version="1.5.2"/>
+  <artifact name="org.apache.ws.security.wss4j" type="bundle" version="1.6.7"/>
+  <artifact name="cxf-specs" type="plan" version="2.6.3"/>
+</plan:Plan>

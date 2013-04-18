@@ -42,6 +42,7 @@ public class Main {
 	public static void main(String[] args)
 			throws DependencyResolutionException,
 			DependencyCollectionException, IOException {
+		PropertyConfigurator.configure("log4j.properties");
 		ResourceSet rs = new ResourceSetImpl();
 		rs.getResourceFactoryRegistry().getExtensionToFactoryMap()
 				.put("maven", new XMIResourceFactoryImpl());
@@ -55,7 +56,7 @@ public class Main {
 		Collection<DocumentRoot> pomModels = net.osgiliath.features.to.maven.m2m.Main
 				.convert(rs);
 		
-		PropertyConfigurator.configure("log4j.properties");
+		
 		
 		Collection<Element> pomsConfiguration = convertToRegularMavenPom(pomModels, rs);
 		int i = 0;

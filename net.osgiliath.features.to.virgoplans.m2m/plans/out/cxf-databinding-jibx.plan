@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ASCII"?>
+<plan:Plan xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:plan="http://www.eclipse.org/virgo/schema/plan" atomic="true" name="cxf-databinding-jibx" scoped="false" version="2.6.3">
+  <artifact name="joda-convert" type="bundle" version="1.2"/>
+  <artifact name="joda-time" type="bundle" version="2.1"/>
+  <artifact name="org.apache.servicemix.bundles.xpp3" type="bundle" version="1.1.0.4c_6"/>
+  <artifact name="joda-time" type="bundle" version="2.1"/>
+  <artifact name="jibx-run" type="bundle" version="1.2.4.5"/>
+  <artifact name="jibx-run" type="bundle" version="1.2.4.5"/>
+  <artifact name="joda-time" type="bundle" version="2.1"/>
+  <artifact name="log4j" type="bundle" version="1.2.16"/>
+  <artifact name="jibx-bind" type="bundle" version="1.2.4.5"/>
+  <artifact name="jibx-bind" type="bundle" version="1.2.4.5"/>
+  <artifact name="jibx-run" type="bundle" version="1.2.4.5"/>
+  <artifact name="joda-time" type="bundle" version="2.1"/>
+  <artifact name="log4j" type="bundle" version="1.2.16"/>
+  <artifact name="jibx-extras" type="bundle" version="1.2.4.5"/>
+  <artifact name="jibx-schema" type="bundle" version="1.2.4.5"/>
+  <artifact name="jibx-schema" type="bundle" version="1.2.4.5"/>
+  <artifact name="jibx-bind" type="bundle" version="1.2.4.5"/>
+  <artifact name="jibx-run" type="bundle" version="1.2.4.5"/>
+  <artifact name="joda-time" type="bundle" version="2.1"/>
+  <artifact name="log4j" type="bundle" version="1.2.16"/>
+  <artifact name="jibx-extras" type="bundle" version="1.2.4.5"/>
+  <artifact name="org.eclipse.text" type="bundle" version="3.5.100.v20110505-0800"/>
+  <artifact name="jibx-tools" type="bundle" version="1.2.4.5"/>
+  <artifact name="org.apache.cxf.cxf-rt-databinding-jibx" type="bundle" version="2.6.3"/>
+  <artifact name="cxf-core" type="plan" version="2.6.3"/>
+  <artifact name="cxf-tools" type="plan" version="2.6.3"/>
+</plan:Plan>

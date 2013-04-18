@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ASCII"?>
+<plan:Plan xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:plan="http://www.eclipse.org/virgo/schema/plan" atomic="true" name="cxf-rs-security-oauth2" scoped="false" version="2.6.3">
+  <artifact name="org.apache.cxf.cxf-rt-rs-security-oauth2" type="bundle" version="2.6.3"/>
+  <artifact name="cxf-jaxrs" type="plan" version="2.6.3"/>
+</plan:Plan>

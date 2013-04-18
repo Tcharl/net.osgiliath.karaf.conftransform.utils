@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<plan:Plan xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:plan="http://www.eclipse.org/virgo/schema/plan" atomic="true" name="cxf-xjc-runtime" scoped="false" version="2.6.3">
+  <artifact name="org.apache.commons.lang" type="bundle" version="2.6"/>
+  <artifact name="org.apache.cxf.xjc-utils.cxf-xjc-runtime" type="bundle" version="2.6.0"/>
+  <artifact name="cxf-jaxb" type="plan" version="2.6.3"/>
+</plan:Plan>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<plan:Plan xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:plan="http://www.eclipse.org/virgo/schema/plan" atomic="true" name="cxf-ws-rm" scoped="false" version="2.6.3">
+  <artifact name="org.apache.cxf.cxf-rt-ws-rm" type="bundle" version="2.6.3"/>
+  <artifact name="cxf-ws-policy" type="plan" version="2.6.3"/>
+  <artifact name="cxf-ws-addr" type="plan" version="2.6.3"/>
+  <artifact name="cxf-databinding-jaxb" type="plan" version="2.6.3"/>
+</plan:Plan>
